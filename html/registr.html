@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="/style/all.css">
     <link rel="stylesheet" href="/style/registr.css">
+    <style>
+      .form-control {
+        transition: color 0.3s ease;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -35,7 +40,7 @@
     
         <div class="form-group">
           <!-- Для номера телефона установим placeholder и предзаполним значение -->
-          <input type="text" name="number" class="form-control" placeholder="+996" value="+996">
+          <input type="text" name="number" class="form-control" placeholder="Введите номер" value="" onfocus="if(this.value===''){this.value='+996'; this.style.color='black';}" oninput="if(!this.value.startsWith('+996'))this.value='+996';" onblur="if(this.value === '+996'){this.value=''; this.style.color='black';}">
         </div>
     
         <div class="form-group">
@@ -57,7 +62,31 @@
         <button type="submit">Отправить</button>
       </form>
 
-
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const phoneInput = document.querySelector('input[name="number"]');
     
+    phoneInput.addEventListener('focus', () => {
+      if (phoneInput.value === '') {
+        phoneInput.value = '+996';
+        phoneInput.style.color = 'black';
+      }
+    });
+
+    phoneInput.addEventListener('input', () => {
+      if (!phoneInput.value.startsWith('+996')) {
+        phoneInput.value = '+996';
+      }
+    });
+
+    phoneInput.addEventListener('blur', () => {
+      if (phoneInput.value === '+996') {
+        phoneInput.value = '';
+        phoneInput.placeholder = 'Введите номер';
+        phoneInput.style.color = 'black';
+      }
+    });
+  });
+</script>
 </body>
 </html>
