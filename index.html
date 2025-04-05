@@ -34,16 +34,14 @@ index.html
             </nav>
         </header>
 
-        <!-- Основной контент -->
-        <main class="main-content">
-            <!-- Левая колонка -->
+        <div class="main-content">
             <div class="content-left">
                 <section class="hero-section">
                     <h1>Открытый чемпионат</h1>
                     <p class="hero-subtitle">Республика Кыргызстан</p>
                     <h3>Дата проведения 25-27 апреля</h3>
                 </section>
-
+        
                 <section class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">🏆</div>
@@ -67,36 +65,31 @@ index.html
                     </div>
                 </section>
             </div>
-
-            <!-- Правая колонка -->
+        
             <div class="content-right">
                 <section class="registration-timer">
                     <h3>До закрытия регистрации осталось</h3>
-                    <div class="timer-container">
-                        <div class="timer-segment">
-                            <div class="timer-value">15</div>
-                            <div class="timer-label">дней</div>
-                        </div>
-                        <div class="timer-segment">
-                            <div class="timer-value">08</div>
-                            <div class="timer-label">часов</div>
-                        </div>
-                        <div class="timer-segment">
-                            <div class="timer-value">54</div>
-                            <div class="timer-label">минут</div>
-                        </div>
-                        <div class="timer-segment">
-                            <div class="timer-value">25</div>
-                            <div class="timer-label">секунд</div>
-                        </div>
+                    <div class="timer-display">
+                        <span class="timer-value">15</span>
+                        <span class="timer-separator">:</span>
+                        <span class="timer-value">08</span>
+                        <span class="timer-separator">:</span>
+                        <span class="timer-value">54</span>
+                        <span class="timer-separator">:</span>
+                        <span class="timer-value">25</span>
+                    </div>
+                    <div class="timer-labels">
+                        <span>дней</span>
+                        <span>часов</span>
+                        <span>минут</span>
+                        <span>секунд</span>
                     </div>
                     <div class="registration-cta">
                         <a href="html/registr.html" class="register-btn">Зарегистрироваться</a>
                     </div>
                 </section>
             </div>
-        </main>
-    </div>
+        </div>
 
     <script src="js/timer.js"></script>
 </body>
