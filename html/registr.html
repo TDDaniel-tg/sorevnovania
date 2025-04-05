@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список участников</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="stylesheet" href="/style/registr.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="..//" >
+                <img src="../иконка.jpg" alt="DDS">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/registr.html">Регистрация</a></li>
+                <li><a href="../html/normativy.html">Нормативы</a></li>
+                <li><a href="../html/disciplin.html">Дисциплины</a></li>
+                <li><a href="../html/spisok.html">Список участников </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+      <form id="tg" class="form-container">
+        <div class="form-group">
+          <!-- Используем атрибут placeholder -->
+          <input type="text" name="name" class="form-control" placeholder="Фамилия Имя Отчество">
+        </div>
+    
+        <div class="form-group">
+          <!-- Для номера телефона установим placeholder и предзаполним значение -->
+          <input type="text" name="number" class="form-control" placeholder="+996" value="+996">
+        </div>
+    
+        <div class="form-group">
+          <input type="text" name="city" class="form-control" placeholder="Город">
+        </div>
+    
+        <div class="form-group">
+          <input type="number" name="heigh" class="form-control" placeholder="Весовая категория">
+        </div>
+    
+        <div class="form-group">
+          <input type="number" name="age" class="form-control" placeholder="Возраст">
+        </div>
+    
+        <div class="form-group">
+          <input type="text" name="disc" class="form-control" placeholder="Дисциплина">
+        </div>
+    
+        <button type="submit">Отправить</button>
+      </form>
+
+
+    
+</body>
+</html>
