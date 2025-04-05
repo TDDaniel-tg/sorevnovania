@@ -7,26 +7,31 @@ index.html
     <title>Спортивная Олимпиада 2025</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="/style/all.css">
 </head>
 <body>
     <div class="page-wrapper">
         <!-- Навигация -->
-        <header class="main-header">
-            <div class="header-container">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="иконка.jpg" alt="Олимпиада 2025">
-                    </a>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="html/registr.html">Регистрация</a></li>
-                        <li><a href="html/normativy.html">Нормативы</a></li>
-                        <li><a href="html/disciplin.html">Дисциплины</a></li>
-                        <li><a href="html/spisok.html">Список участников</a></li>
-                    </ul>
-                </nav>
+        <header>
+            <div class="logo">
+                <a href="..//" >
+                    <img src="../иконка.jpg" alt="DDS">
+                </a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="../html/registr.html">Регистрация</a></li>
+                    <li class="dropdown">
+                        <a>Нормативы</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/male.html">Мужские</a></li>
+                            <li><a href="../html/female.html">Женские</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/disciplin.html">Дисциплины</a></li>
+                    <li><a href="../html/spisok.html">Список участников </a></li>
+                </ul>
+            </nav>
         </header>
 
         <!-- Основной контент -->
