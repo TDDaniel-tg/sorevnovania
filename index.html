@@ -1,30 +1,97 @@
+index.html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/style/all.css">
+    <title>Спортивная Олимпиада 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html" >
-                <img src="иконка.jpg" alt="DDS">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="html/registr.html">Регистрация</a></li>
-                <li><a href="html/normativy.html">Нормативы</a></li>
-                <li><a href="html/disciplin.html">Дисциплины</a></li>
-                <li><a href="html/spisok.html">Список участников </a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page-wrapper">
+        <!-- Навигация -->
+        <header class="main-header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="иконка.jpg" alt="Олимпиада 2025">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="html/registr.html">Регистрация</a></li>
+                        <li><a href="html/normativy.html">Нормативы</a></li>
+                        <li><a href="html/disciplin.html">Дисциплины</a></li>
+                        <li><a href="html/spisok.html">Список участников</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    
+        <!-- Основной контент -->
+        <main class="main-content">
+            <!-- Левая колонка -->
+            <div class="content-left">
+                <section class="hero-section">
+                    <h1>Олимпиада 2025</h1>
+                    <p class="hero-subtitle">Главное спортивное событие года</p>
+                </section>
+
+                <section class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h4>Более 20 видов спорта</h4>
+                        <p>Широкий выбор спортивных дисциплин</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌟</div>
+                        <h4>Участники со всех регионов</h4>
+                        <p>Масштабное спортивное событие</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h4>Призовой фонд</h4>
+                        <p>Более 5 000 000 ₽</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📺</div>
+                        <h4>Прямые трансляции</h4>
+                        <p>Онлайн-трансляция всех соревнований</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Правая колонка -->
+            <div class="content-right">
+                <section class="registration-timer">
+                    <h3>До закрытия регистрации осталось</h3>
+                    <div class="timer-container">
+                        <div class="timer-segment">
+                            <div class="timer-value">15</div>
+                            <div class="timer-label">дней</div>
+                        </div>
+                        <div class="timer-segment">
+                            <div class="timer-value">08</div>
+                            <div class="timer-label">часов</div>
+                        </div>
+                        <div class="timer-segment">
+                            <div class="timer-value">54</div>
+                            <div class="timer-label">минут</div>
+                        </div>
+                        <div class="timer-segment">
+                            <div class="timer-value">25</div>
+                            <div class="timer-label">секунд</div>
+                        </div>
+                    </div>
+                    <div class="registration-cta">
+                        <a href="html/registr.html" class="register-btn">Зарегистрироваться</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/timer.js"></script>
 </body>
 </html>
