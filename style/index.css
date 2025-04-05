@@ -78,15 +78,21 @@ body {
     color: var(--color-accent);
 }
 
-/* Main Content */
 .main-content {
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr; /* Default to single column for better responsiveness */
-    gap: 2rem;
-    padding: 2rem 1rem;
+    display: flex; /* Используем Flexbox для горизонтального расположения */
+    justify-content: space-between; /* Разделяем элементы по сторонам */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    gap: 2rem; /* Добавляем расстояние между колонками */
+    margin-top: 2rem;
 }
 
+.content-left {
+    order: 1; /* Убедимся, что левая колонка идет первой */
+}
+
+.content-right {
+    order: 2; /* Убедимся, что правая колонка идет второй */
+}
 /* Hero Section */
 .hero-section {
     text-align: left;
@@ -140,39 +146,44 @@ body {
 
 /* Timer */
 .registration-timer {
+    flex: 1; /* Задаем ширину таймера */
     background: linear-gradient(165deg, var(--color-surface), rgba(30, 41, 59, 0.9));
     padding: 2.5rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    margin-top: 2rem; /* Add spacing for better layout */
+    margin: 0; /* Убираем верхний отступ */
 }
 
+/* Контейнер таймера */
 .timer-container {
-    display: flex; /* Ensure proper layout */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
+/* Сегменты таймера */
 .timer-segment {
     background: rgba(15, 23, 42, 0.6);
     padding: 1.5rem;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease;
-    cursor: pointer; /* Add pointer cursor for better UX */
+    cursor: pointer;
 }
 
 .timer-segment:hover {
     transform: translateY(-5px);
 }
 
+/* Значения таймера */
 .timer-value {
     font-size: 2.5rem;
     background: linear-gradient(45deg, var(--color-primary), var(--color-accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .register-btn {
     display: inline-block;
