@@ -89,6 +89,22 @@ header nav ul li a:hover {
     color: #ff8c00;
 }
 
+header nav ul li p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ddd;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+header nav ul li p:hover {
+    color: #ff8c00;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
