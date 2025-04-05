@@ -8,6 +8,7 @@ index.html
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="/style/all.css">
+    
 </head>
 <body>
     <div class="page-wrapper">
@@ -50,7 +51,7 @@ index.html
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🌟</div>
-                        <h4>Участники со всех регионов</h4>
+                        <h4>Участники со всех стран и регионов</h4>
                         <p>Масштабное спортивное событие</p>
                     </div>
                     <div class="feature-card">
@@ -60,8 +61,8 @@ index.html
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">📺</div>
-                        <h4>Прямые трансляции</h4>
-                        <p>Онлайн-трансляция всех соревнований</p>
+                        <h4>Мастер классы</h4>
+                        <p>От лучших специалистов</p>
                     </div>
                 </section>
             </div>
@@ -90,7 +91,71 @@ index.html
                 </section>
             </div>
         </div>
-
+        <div>
+            <section class="registration-info">
+                <div class="registration-info-content">
+                    <p>Для того чтобы стать участником соревнований всем нужно зарегестрироваться, и это весьма простое и лекгое дело!</p>
+                    <h1>Вводи свои данные ниже и ты уже участник соревнований</h1>
+                    <h2>ВСЕ ДАННЫЕ СТРОГО КОНФИДЕНЦИАЛЬНЫ</h2>
+                </div>
+                <form id="tg" class="form-container">
+                    <div class="form-group">
+                      <!-- Используем атрибут placeholder -->
+                      <input type="text" name="name" class="form-control" placeholder="Фамилия Имя Отчество">
+                    </div>
+                
+                    <div class="form-group">
+                      <!-- Для номера телефона установим placeholder и предзаполним значение -->
+                      <input type="text" name="number" class="form-control" placeholder="Введите номер" value="" onfocus="if(this.value===''){this.value='+996'; this.style.color='black';}" oninput="if(!this.value.startsWith('+996'))this.value='+996';" onblur="if(this.value === '+996'){this.value=''; this.style.color='black';}">
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="text" name="city" class="form-control" placeholder="Город">
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="number" name="heigh" class="form-control" placeholder="Весовая категория">
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="number" name="age" class="form-control" placeholder="Возраст">
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="text" name="disc" class="form-control" placeholder="Дисциплина">
+                    </div>
+                
+                    <button type="submit">Отправить</button>
+                  </form>
+            
+            <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                const phoneInput = document.querySelector('input[name="number"]');
+                
+                phoneInput.addEventListener('focus', () => {
+                  if (phoneInput.value === '') {
+                    phoneInput.value = '+996';
+                    phoneInput.style.color = 'black';
+                  }
+                });
+            
+                phoneInput.addEventListener('input', () => {
+                  if (!phoneInput.value.startsWith('+996')) {
+                    phoneInput.value = '+996';
+                  }
+                });
+            
+                phoneInput.addEventListener('blur', () => {
+                  if (phoneInput.value === '+996') {
+                    phoneInput.value = '';
+                    phoneInput.placeholder = 'Введите номер';
+                    phoneInput.style.color = 'black';
+                  }
+                });
+              });
+            </script>
+        </div>
     <script src="js/timer.js"></script>
+    <script src="js/registr.js"></script>
 </body>
 </html>

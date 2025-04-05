@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #2563eb;
-    --color-secondary: #3b82f6;
+    --color-primary: #1e49a7;
+    --color-secondary: #3f516e;
     --color-accent: #f59e0b;
     --color-background: #0f172a;
     --color-surface: #1e293b;
@@ -209,10 +209,12 @@ body {
 }
 
 .register-btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
     padding: 1rem 2rem;
-    margin-top: 20px;
+    margin: 20px auto; /* Center horizontally */
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
     text-decoration: none;
@@ -227,10 +229,121 @@ body {
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
 }
 
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Reduced from 500px */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.registration-info {
+    background: linear-gradient(145deg, var(--color-surface), rgba(30, 41, 59, 0.8));
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 15%;
+}
+
+.registration-info-content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.registration-info-content p {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.registration-info-content h1 {
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.registration-info-content h2 {
+    font-size: 1.25rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+    }
+
+.button-container a {
+    text-decoration: none;
+}
+
+.button-container button {
+    width: 100%;
+}
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-surface); /* Match surface color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary); /* Match primary color */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary); /* Match secondary color on hover */
 }
 
 /* Responsive Design */
