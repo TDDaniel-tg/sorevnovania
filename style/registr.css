@@ -1,59 +1,80 @@
-.form-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #121212);
+    margin: 0;
+    padding: 0;
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0;
 }
 
-label {
-    font-size: 1em;
-    margin-bottom: 5px;
-    text-align: left;
+.form-container {
+    background-color: #2a2a3b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
 }
 
 input {
     font-size: 1em;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #1e1e2f;
+    color: #e0e0e0;
     width: 100%;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.5);
+    outline: none;
+}
+
 button {
     font-size: 1.2em;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
-    background-color: #333333;
+    border-radius: 8px;
+    background-color: #6a11cb;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #4a0fbf;
+    transform: scale(1.05);
 }
 
-.button-container {
-    text-align: center;
-    margin: 20px 0;
-    }
-
-.button-container a {
-    text-decoration: none;
+button:active {
+    transform: scale(0.95);
 }
 
-.button-container button {
-    width: 100%;
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
 }
