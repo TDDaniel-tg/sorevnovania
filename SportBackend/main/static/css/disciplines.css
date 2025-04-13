@@ -1,0 +1,95 @@
+.disciplines-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.disciplines-container h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.discipline-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.discipline-card h2 {
+    color: #2c3e50;
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem;
+    margin: 0;
+    background: #f8f9fa;
+}
+
+.discipline-content {
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.discipline-content img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.discipline-info {
+    flex: 1;
+}
+
+.discipline-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.discipline-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.discipline-info li {
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.discipline-info li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .discipline-content {
+        flex-direction: column;
+    }
+
+    .discipline-content img {
+        width: 100%;
+        height: auto;
+    }
+} 

@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Список участников - Спортивная Олимпиада 2025{% endblock %}
+
+{% block extra_css %}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    .page-header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 40px 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .participants-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: 20px 0;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .participants-table th,
+    .participants-table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .participants-table th {
+        background: #f8f9fa;
+        color: #2a5298;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    
+    .participants-table tr:last-child td {
+        border-bottom: none;
+    }
+    
+    .participants-table tr:hover {
+        background-color: #f8f9fa;
+        transition: background-color 0.3s ease;
+    }
+
+    .participants-table td {
+        font-family: 'Raleway', sans-serif;
+        color: #444;
+    }
+
+    .weight-category {
+        background: #e3f2fd;
+        color: #1976d2;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+    }
+
+    .discipline {
+        color: #2a5298;
+        font-weight: 500;
+    }
+
+    .registration-date {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .participants-table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        
+        .page-header h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1>Список участников</h1>
+    </div>
+</div>
+
+<div class="container">
+    <table class="participants-table">
+        <thead>
+            <tr>
+                <th>ФИО</th>
+                <th>Номер телефона</th>
+                <th>Город</th>
+                <th>Весовая категория</th>
+                <th>Возраст</th>
+                <th>Дисциплина</th>
+                <th>Дата регистрации</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for participant in participants %}
+            <tr>
+                <td>{{ participant.name }}</td>
+                <td>{{ participant.phone_number }}</td>
+                <td>{{ participant.city }}</td>
+                <td><span class="weight-category">{{ participant.weight_category }} кг</span></td>
+                <td>{{ participant.age }} лет</td>
+                <td><span class="discipline">{{ participant.discipline }}</span></td>
+                <td><span class="registration-date">{{ participant.registration_date|date:"d.m.Y H:i" }}</span></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

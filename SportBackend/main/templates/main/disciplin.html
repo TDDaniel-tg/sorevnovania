@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дисциплины</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../static/css/all.css">
+    <link rel="stylesheet" href="../../static/css/disciplines.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="..//" >
+                <img src="../../static/images/иконка.jpg" alt="DDS">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'registration' %}">Регистрация</a></li>
+                <li class="dropdown">
+                    <p>Нормативы</p>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'male_standards' %}">Мужские</a></li>
+                        <li><a href="{% url 'female_standards' %}">Женские</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'disciplines' %}">Дисциплины</a></li>
+                <li><a href="{% url 'participants_list' %}">Список участников</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="disciplines-container">
+        <h1>Спортивные дисциплины</h1>
+        
+        <section class="discipline-card">
+            <h2>Бег на 100 метров</h2>
+            <div class="discipline-content">
+                <img src="../../static/images/sprint.jpg" alt="Спринт">
+                <div class="discipline-info">
+                    <p>Классическая легкоатлетическая дисциплина, требующая максимальной скорости и взрывной силы.</p>
+                    <ul>
+                        <li>Дистанция: 100 метров</li>
+                        <li>Поверхность: Беговая дорожка</li>
+                        <li>Старт: Низкий старт</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="discipline-card">
+            <h2>Прыжки в длину</h2>
+            <div class="discipline-content">
+                <img src="../../static/images/long-jump.jpg" alt="Прыжки в длину">
+                <div class="discipline-info">
+                    <p>Техническая дисциплина, сочетающая скорость разбега и мощь прыжка.</p>
+                    <ul>
+                        <li>Разбег: 40-45 метров</li>
+                        <li>Поверхность: Песчаная яма</li>
+                        <li>Измерение: По следу ближе к планке</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="discipline-card">
+            <h2>Метание копья</h2>
+            <div class="discipline-content">
+                <img src="../../static/images/javelin.jpg" alt="Метание копья">
+                <div class="discipline-info">
+                    <p>Технически сложная дисциплина, требующая координации и силы.</p>
+                    <ul>
+                        <li>Вес копья: 800г (мужчины), 600г (женщины)</li>
+                        <li>Разбег: 30-35 метров</li>
+                        <li>Сектор: 29°</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Спортивные соревнования. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

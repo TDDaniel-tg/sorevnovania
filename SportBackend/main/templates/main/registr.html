@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Регистрация - Спортивная Олимпиада 2025{% endblock %}
+
+{% block extra_css %}
+<style>
+    .registration-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 40px;
+        background: var(--color-surface);
+        border-radius: 15px;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .form-header h2 {
+        font-size: 2.5em;
+        color: var(--color-text);
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .form-header p {
+        color: var(--color-text-muted);
+        font-size: 1.1em;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid var(--color-background);
+        border-radius: 10px;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+        background: var(--color-background);
+        color: var(--color-text);
+    }
+
+    .form-control:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        outline: none;
+    }
+
+    .form-label {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--color-surface);
+        padding: 0 5px;
+        color: var(--color-text-muted);
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+
+    .form-control:focus + .form-label,
+    .form-control:not(:placeholder-shown) + .form-label {
+        top: 0;
+        font-size: 0.9em;
+        color: var(--color-primary);
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+        background: var(--color-primary);
+        color: var(--color-text);
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background: var(--color-secondary);
+        transform: translateY(-2px);
+    }
+
+    .message {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 500;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .message.show {
+        opacity: 1;
+    }
+
+    .message.success {
+        background: rgba(34, 197, 94, 0.1);
+        color: #22c55e;
+    }
+
+    .message.error {
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+    }
+
+    .progress-bar {
+        height: 4px;
+        background: var(--color-background);
+        margin-bottom: 30px;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    .progress {
+        height: 100%;
+        background: var(--color-primary);
+        width: 0;
+        transition: width 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+        .registration-container {
+            margin: 20px;
+            padding: 20px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="registration-container">
+    <div class="form-header">
+        <h2>Регистрация на Олимпиаду</h2>
+        <p>Заполните форму для участия в Спортивной Олимпиаде 2025</p>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress" id="progressBar"></div>
+    </div>
+
+    <form id="registrationForm">
+        <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder=" " required>
+            <label class="form-label">Фамилия Имя Отчество</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="phone_number" class="form-control" placeholder=" " required
+                   onfocus="if(this.value===''){this.value='+996'; this.style.color='var(--color-text)';}"
+                   oninput="if(!this.value.startsWith('+996'))this.value='+996';"
+                   onblur="if(this.value === '+996'){this.value=''; this.style.color='var(--color-text)';}">
+            <label class="form-label">Номер телефона</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="city" class="form-control" placeholder=" " required>
+            <label class="form-label">Город</label>
+        </div>
+        <div class="form-group">
+            <input type="number" name="weight_category" class="form-control" placeholder=" " 
+                   min="30" max="150" required>
+            <label class="form-label">Весовая категория (кг)</label>
+        </div>
+        <div class="form-group">
+            <input type="number" name="age" class="form-control" placeholder=" " 
+                   min="6" max="100" required>
+            <label class="form-label">Возраст</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="discipline" class="form-control" placeholder=" " required>
+            <label class="form-label">Дисциплина</label>
+        </div>
+        <button type="submit" class="submit-btn">Зарегистрироваться</button>
+        <div id="message" class="message"></div>
+    </form>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('registrationForm');
+        const progressBar = document.getElementById('progressBar');
+        const inputs = form.querySelectorAll('input');
+        
+        function updateProgress() {
+            const filledInputs = Array.from(inputs).filter(input => input.value.trim() !== '').length;
+            const progress = (filledInputs / inputs.length) * 100;
+            progressBar.style.width = `${progress}%`;
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('input', updateProgress);
+        });
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: this.name.value,
+                phone_number: this.phone_number.value.replace(/\s+/g, ''),
+                city: this.city.value,
+                weight_category: parseInt(this.weight_category.value),
+                age: parseInt(this.age.value),
+                discipline: this.discipline.value
+            };
+
+            try {
+                const response = await fetch('/participants/api/register/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+                const messageDiv = document.getElementById('message');
+                
+                messageDiv.classList.add('show');
+                
+                if (response.ok) {
+                    messageDiv.className = 'message success show';
+                    messageDiv.textContent = data.message;
+                    setTimeout(() => {
+                        window.location.href = '{% url "participants_list" %}';
+                    }, 2000);
+                } else {
+                    messageDiv.className = 'message error show';
+                    messageDiv.textContent = data.message;
+                }
+            } catch (error) {
+                const messageDiv = document.getElementById('message');
+                messageDiv.className = 'message error show';
+                messageDiv.textContent = 'Произошла ошибка при отправке формы';
+            }
+        });
+    });
+</script>
+{% endblock %}
