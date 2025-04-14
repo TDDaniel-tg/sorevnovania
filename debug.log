@@ -614,3 +614,33 @@ INFO 2025-04-14 17:25:49,878 basehttp 13620 13500 "GET /static/css/all.css HTTP/
 INFO 2025-04-14 17:25:49,880 basehttp 13620 13908 "GET /static/css/index.css HTTP/1.1" 200 20079
 WARNING 2025-04-14 17:25:49,981 log 13620 13908 Not Found: /favicon.ico
 WARNING 2025-04-14 17:25:49,982 basehttp 13620 13908 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-14 20:52:00,313 autoreload 6372 5592 Watching for file changes with StatReloader
+INFO 2025-04-14 20:54:06,147 autoreload 15232 5440 Watching for file changes with StatReloader
+INFO 2025-04-14 20:59:45,632 basehttp 15232 14360 "GET /admin/ HTTP/1.1" 200 8619
+INFO 2025-04-14 20:59:45,781 basehttp 15232 14360 "GET /static/admin/css/base.css HTTP/1.1" 200 22154
+INFO 2025-04-14 20:59:45,838 basehttp 15232 9052 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-04-14 20:59:45,845 basehttp 15232 296 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-04-14 20:59:45,862 basehttp 15232 8256 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-14 20:59:45,875 basehttp 15232 444 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-04-14 20:59:45,878 basehttp 15232 9068 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16632
+INFO 2025-04-14 20:59:45,984 basehttp 15232 9068 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-14 20:59:45,991 basehttp 15232 444 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-04-14 20:59:45,991 basehttp 15232 8256 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-04-14 20:59:45,991 basehttp 15232 9068 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-14 20:59:46,466 log 15232 9068 Not Found: /favicon.ico
+WARNING 2025-04-14 20:59:46,468 basehttp 15232 9068 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-14 21:00:20,304 basehttp 15232 9068 "GET /admin/participants/participant/ HTTP/1.1" 200 10279
+INFO 2025-04-14 21:00:20,365 basehttp 15232 296 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-14 21:00:20,365 basehttp 15232 9052 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-14 21:00:20,374 basehttp 15232 296 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-04-14 21:00:20,375 basehttp 15232 9068 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-04-14 21:00:20,376 basehttp 15232 9052 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-14 21:00:20,386 basehttp 15232 8256 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-14 21:00:20,386 basehttp 15232 14360 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-04-14 21:00:20,387 basehttp 15232 9068 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-14 21:00:20,391 basehttp 15232 444 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-14 21:00:20,392 basehttp 15232 9052 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-14 21:00:20,396 basehttp 15232 444 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-04-14 21:00:20,404 basehttp 15232 444 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-04-14 21:00:20,450 basehttp 15232 444 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-04-14 21:00:20,450 basehttp 15232 9052 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581

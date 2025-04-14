@@ -31,6 +31,10 @@ ALLOWED_HOSTS = ['*']  # Для разработки, в продакшене н
 
 # Application definition
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://sorevnovania-production.up.railway.app'
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
