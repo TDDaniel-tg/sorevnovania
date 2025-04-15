@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/all.css' %}">
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
         footer {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
@@ -157,14 +168,14 @@
             <div class="footer-section">
                 <h3>Контакты</h3>
                 <ul>
-                    <li><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</li>
-                    <li><i class="fas fa-envelope"></i> info@olympiad2025.ru</li>
-                    <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Спортивная, 1</li>
+                    <li><i class="fas fa-phone"></i> +996 708 88 08 38 Елизавета.И.</li>
+                    
+                    <li><i class="fas fa-map-marker-alt"></i> Место проведения: г. Бишкек, ул. Курманжан Датка, 304, ЦФиБ «Strong».</li>
                 </ul>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-vk"></i></a>
+                    
                     <a href="#"><i class="fab fa-telegram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="http://wa.me/996708880838"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -185,4 +196,4 @@
     <script src="{% static 'js/main.js' %}"></script>
     {% block extra_js %}{% endblock %}
 </body>
-</html> 
+</html>

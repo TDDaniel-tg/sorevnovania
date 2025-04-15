@@ -1,95 +1,98 @@
-.disciplines-container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+
+/* Секция дисциплин */
+.disciplines-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--color-surface), rgba(30, 41, 59, 0.8));
+    border-radius: 20px;
+    margin: 2rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-lg);
 }
 
-.disciplines-container h1 {
+.disciplines-section h2 {
     text-align: center;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
     margin-bottom: 2rem;
+    color: var(--color-text);
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.disciplines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .discipline-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-    overflow: hidden;
-}
-
-.discipline-card h2 {
-    color: #2c3e50;
-    font-family: 'Oswald', sans-serif;
-    padding: 1rem;
-    margin: 0;
-    background: #f8f9fa;
-}
-
-.discipline-content {
+    background: linear-gradient(145deg, var(--color-surface), rgba(30, 41, 59, 0.8));
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    padding: 1.5rem;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
 }
 
-.discipline-content img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
+.discipline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+    border-color: var(--color-primary);
 }
 
-.discipline-info {
-    flex: 1;
-}
-
-.discipline-info p {
-    color: #666;
-    line-height: 1.6;
+.discipline-icon {
+    font-size: 3rem;
     margin-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
-}
-
-.discipline-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.discipline-info li {
-    color: #555;
-    margin-bottom: 0.5rem;
-    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.1);
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.discipline-info li:before {
-    content: "•";
-    color: #3498db;
-    font-weight: bold;
-    margin-right: 0.5rem;
+.discipline-card h3 {
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
 }
 
-footer {
-    background: #2c3e50;
-    color: #fff;
-    padding: 1rem 0;
-    margin-top: 2rem;
+.discipline-card p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-top: auto;
 }
 
-.footer-content {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
+/* Адаптивность для дисциплин */
 @media (max-width: 768px) {
-    .discipline-content {
-        flex-direction: column;
+    .disciplines-grid {
+        grid-template-columns: 1fr;
     }
 
-    .discipline-content img {
-        width: 100%;
-        height: auto;
+    .discipline-card {
+        min-height: 180px;
+        padding: 1.5rem;
     }
-} 
+
+    .discipline-icon {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+    }
+
+    .discipline-card h3 {
+        font-size: 1.2rem;
+    }
+}
