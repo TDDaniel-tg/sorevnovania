@@ -8,4 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.add('active');
         }
     });
-}); 
+
+    // Burger menu toggle
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('header nav');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+});

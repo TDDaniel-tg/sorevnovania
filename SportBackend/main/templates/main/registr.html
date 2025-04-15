@@ -22,7 +22,7 @@
     }
 
     .form-header h2 {
-        font-size: 2.5em;
+        font-size: 2em; /* Reduced font size */
         color: var(--color-text);
         margin-bottom: 10px;
         font-weight: 700;
@@ -30,7 +30,7 @@
 
     .form-header p {
         color: var(--color-text-muted);
-        font-size: 1.1em;
+        font-size: 1em; /* Reduced font size */
     }
 
     .form-group {
@@ -40,10 +40,10 @@
 
     .form-control {
         width: 100%;
-        padding: 15px;
+        padding: 12px; /* Adjusted padding */
         border: 2px solid var(--color-background);
         border-radius: 10px;
-        font-size: 1.1em;
+        font-size: 1em; /* Reduced font size */
         transition: all 0.3s ease;
         background: var(--color-background);
         color: var(--color-text);
@@ -76,12 +76,12 @@
 
     .submit-btn {
         width: 100%;
-        padding: 15px;
+        padding: 12px; /* Adjusted padding */
         background: var(--color-primary);
         color: var(--color-text);
         border: none;
         border-radius: 10px;
-        font-size: 1.2em;
+        font-size: 1em; /* Reduced font size */
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -133,8 +133,11 @@
 
     @media (max-width: 768px) {
         .registration-container {
-            margin: 20px;
-            padding: 20px;
+            
+            margin: 20px auto; /* Center horizontally */
+            padding: 15px; /* Added padding for better spacing */
+            transform: none; /* Remove translateX for centering */
+            margin-top: 150px;
         }
     }
 </style>
