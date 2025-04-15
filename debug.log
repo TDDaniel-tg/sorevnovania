@@ -2002,3 +2002,61 @@ INFO 2025-04-15 16:43:17,451 basehttp 2492 13972 "GET /static/css/index.css HTTP
 INFO 2025-04-15 16:43:17,451 basehttp 2492 8420 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
 WARNING 2025-04-15 16:43:18,545 log 2492 13972 Not Found: /favicon.ico
 WARNING 2025-04-15 16:43:18,546 basehttp 2492 13972 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 19:29:36,262 autoreload 18804 9528 Watching for file changes with StatReloader
+INFO 2025-04-15 19:29:45,880 basehttp 18804 14844 code 400, message Bad request version ('^')
+INFO 2025-04-15 19:29:45,905 basehttp 18804 13440 - Broken pipe from ('127.0.0.1', 51019)
+ERROR 2025-04-15 19:29:45,947 basehttp 18804 17288 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-04-15 19:29:45,947 basehttp 18804 14844 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-15 19:29:45,952 basehttp 18804 12336 code 400, message Bad request version ('\x02h2\x08http/1.1\x00+\x00\x07\x06')
+ERROR 2025-04-15 19:29:45,969 basehttp 18804 2516 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-04-15 19:29:45,969 basehttp 18804 12336 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-04-15 19:29:46,000 basehttp 18804 8100 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:29:46,501 basehttp 18804 19480 "GET /static/js/main.js HTTP/1.1" 200 665
+INFO 2025-04-15 19:29:46,506 basehttp 18804 19476 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+INFO 2025-04-15 19:29:46,534 basehttp 18804 19472 "GET /static/css/all.css HTTP/1.1" 200 5565
+INFO 2025-04-15 19:29:46,562 basehttp 18804 19488 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 19:29:46,563 basehttp 18804 8100 "GET /static/css/index.css HTTP/1.1" 200 20679
+INFO 2025-04-15 19:29:46,574 basehttp 18804 19484 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 19:29:46,671 basehttp 18804 19568 "GET / HTTP/1.1" 200 20433
+WARNING 2025-04-15 19:29:47,208 log 18804 19484 Not Found: /favicon.ico
+WARNING 2025-04-15 19:29:47,209 basehttp 18804 19484 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 19:29:52,585 basehttp 18804 19484 "GET /static/css/all.css HTTP/1.1" 304 0
+INFO 2025-04-15 19:31:18,304 basehttp 18804 19484 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:31:18,348 basehttp 18804 19484 "GET /static/css/index.css HTTP/1.1" 304 0
+INFO 2025-04-15 19:31:18,348 basehttp 18804 19488 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 304 0
+INFO 2025-04-15 19:31:18,350 basehttp 18804 19472 "GET /static/js/main.js HTTP/1.1" 200 2241
+INFO 2025-04-15 19:31:18,357 basehttp 18804 8100 "GET /static/css/all.css HTTP/1.1" 200 5715
+INFO 2025-04-15 19:31:18,386 basehttp 18804 8100 "GET /static/js/timer.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:31:18,386 basehttp 18804 19472 "GET /static/js/registr.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:31:18,528 basehttp 18804 19568 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:32:24,045 basehttp 18804 19472 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:32:24,082 basehttp 18804 19472 "GET /static/css/index.css HTTP/1.1" 200 20679
+INFO 2025-04-15 19:32:24,089 basehttp 18804 8100 "GET /static/css/all.css HTTP/1.1" 200 5715
+INFO 2025-04-15 19:32:24,090 basehttp 18804 19484 "GET /static/js/main.js HTTP/1.1" 200 2241
+INFO 2025-04-15 19:32:24,090 basehttp 18804 19488 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+INFO 2025-04-15 19:32:24,116 basehttp 18804 19488 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 19:32:24,116 basehttp 18804 8100 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 19:32:24,349 basehttp 18804 19568 "GET / HTTP/1.1" 200 20433
+WARNING 2025-04-15 19:32:25,190 log 18804 19488 Not Found: /favicon.ico
+WARNING 2025-04-15 19:32:25,191 basehttp 18804 19488 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 19:32:29,164 basehttp 18804 19488 "GET /participants/registration/ HTTP/1.1" 200 14157
+INFO 2025-04-15 19:32:29,283 basehttp 18804 19568 "GET /participants/registration/ HTTP/1.1" 200 14157
+INFO 2025-04-15 19:32:33,557 basehttp 18804 19488 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:32:33,647 basehttp 18804 19488 "GET /static/css/all.css HTTP/1.1" 304 0
+INFO 2025-04-15 19:32:33,774 basehttp 18804 19568 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:33:36,410 basehttp 18804 19488 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:33:36,437 basehttp 18804 19488 "GET /static/css/index.css HTTP/1.1" 304 0
+INFO 2025-04-15 19:33:36,438 basehttp 18804 19484 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 304 0
+INFO 2025-04-15 19:33:36,439 basehttp 18804 19472 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:33:36,443 basehttp 18804 8100 "GET /static/css/all.css HTTP/1.1" 200 5846
+INFO 2025-04-15 19:33:36,474 basehttp 18804 8100 "GET /static/js/timer.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:33:36,474 basehttp 18804 19472 "GET /static/js/registr.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:33:36,490 basehttp 18804 19568 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 19:35:07,617 basehttp 18804 19472 "GET / HTTP/1.1" 200 19540
+INFO 2025-04-15 19:35:07,650 basehttp 18804 19472 "GET /static/css/index.css HTTP/1.1" 304 0
+INFO 2025-04-15 19:35:07,651 basehttp 18804 8100 "GET /static/css/all.css HTTP/1.1" 304 0
+INFO 2025-04-15 19:35:07,654 basehttp 18804 19488 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:35:07,655 basehttp 18804 19484 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 304 0
+INFO 2025-04-15 19:35:07,687 basehttp 18804 19488 "GET /static/js/registr.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:35:07,687 basehttp 18804 19484 "GET /static/js/timer.js HTTP/1.1" 304 0
+INFO 2025-04-15 19:35:07,719 basehttp 18804 19568 "GET / HTTP/1.1" 200 19540

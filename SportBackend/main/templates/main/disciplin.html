@@ -1,97 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дисциплины</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+{% extends 'base.html' %}
+{% load static %}
 
-    <link rel="stylesheet" href="../../static/css/all.css">
-    <link rel="stylesheet" href="../../static/css/disciplines.css">
+{% block title %}Дисциплины{% endblock %}
 
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="..//" >
-                <img src="../../static/images/иконка.jpg" alt="DDS">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'registration' %}">Регистрация</a></li>
-                <li class="dropdown">
-                    <p>Нормативы</p>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'male_standards' %}">Мужские</a></li>
-                        <li><a href="{% url 'female_standards' %}">Женские</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url 'disciplines' %}">Дисциплины</a></li>
-                <li><a href="{% url 'participants_list' %}">Список участников</a></li>
-            </ul>
-        </nav>
-    </header>
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/disciplines.css' %}">
+{% endblock %}
 
-    <section class="disciplines-section">
-        <h2>Дисциплины</h2>
-        <div class="disciplines-grid">
-            <div class="discipline-card">
-                <div class="discipline-icon">🏋️‍♂️</div>
-                <h3>Пауэрлифтинг</h3>
-                <p>Классическое троеборье</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">💪</div>
-                <h3>Жим лежа классический</h3>
-                <p>Классическая дисциплина</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">🏋️</div>
-                <h3>Жим лежа военный</h3>
-                <p>Специальная дисциплина</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">🎯</div>
-                <h3>Жим в слинге</h3>
-                <p>Многопетельный жим</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">🏋️‍♀️</div>
-                <h3>Народный жим лежа</h3>
-                <p>Популярная дисциплина</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">💪</div>
-                <h3>Становая тяга</h3>
-                <p>Базовая дисциплина</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">🏋️</div>
-                <h3>Строгий подъем на бицепс</h3>
-                <p>Техническая дисциплина</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">🔥</div>
-                <h3>Экстремальный подъем на бицепс</h3>
-                <p>Сложная дисциплина</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">💪</div>
-                <h3>Ягодичный мост</h3>
-                <p>Специализированная дисциплина</p>
-            </div>
-            <div class="discipline-card">
-                <div class="discipline-icon">🏋️‍♂️</div>
-                <h3>Стрит лифтинг</h3>
-                <p>Отжимания от брусьев с весом</p>
-            </div>
+{% block content %}
+<section class="disciplines-section">
+    <h2>Дисциплины</h2>
+    <div class="disciplines-grid">
+        <div class="discipline-card">
+            <div class="discipline-icon">🏋️‍♂️</div>
+            <h3>Пауэрлифтинг</h3>
+            <p>Классическое троеборье</p>
         </div>
-    </section>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Спортивные соревнования. Все права защищены.</p>
+        <div class="discipline-card">
+            <div class="discipline-icon">💪</div>
+            <h3>Жим лежа классический</h3>
+            <p>Классическая дисциплина</p>
         </div>
-    </footer>
-</body>
-</html>
+        <div class="discipline-card">
+            <div class="discipline-icon">🏋️</div>
+            <h3>Жим лежа военный</h3>
+            <p>Специальная дисциплина</p>
+        </div>
+        <div class="discipline-card">
+            <div class="discipline-icon">🎯</div>
+            <h3>Жим в слинге</h3>
+            <p>Многопетельный жим</p>
+        </div>
+        <div class="discipline-card">
+            <div class="discipline-icon">🏋️‍♀️</div>
+            <h3>Народный жим лежа</h3>
+            <p>Популярная дисциплина</p>
+        </div>
+        <div class="discipline-card">
+            <div class="discipline-icon">💪</div>
+            <h3>Становая тяга</h3>
+            <p>Базовая дисциплина</p>
+        </div>
+        <div class="discipline-card">
+            <div class="discipline-icon">🏋️</div>
+            <h3>Строгий подъем на бицепс</h3>
+            <p>Техническая дисциплина</p>
+        </div>
+        <div class="discipline-card">
+            <div class="discipline-icon">🔥</div>
+            <h3>Экстремальный подъем на бицепс</h3>
+            <p>Сложная дисциплина</p>
+        </div>
+        <div class="discipline-card">
+            <div class="discipline-icon">💪</div>
+            <h3>Ягодичный мост</h3>
+            <p>Специализированная дисциплина</p>
+        </div>
+        <div class="discipline-card">
+            <div class="discipline-icon">🏋️‍♂️</div>
+            <h3>Стрит лифтинг</h3>
+            <p>Отжимания от брусьев с весом</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

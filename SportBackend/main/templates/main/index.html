@@ -5,29 +5,6 @@
 
 {% block content %}
 <div class="page-wrapper">
-    <!-- Навигация -->
-    <header>
-        <div class="logo">
-            <a href="{% url 'home' %}">
-                <img src="{% static 'images/иконка.jpg' %}" alt="DDS">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'registration' %}">Регистрация</a></li>
-                <li class="dropdown">
-                    <p>Нормативы</p>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'male_standards' %}">Мужские</a></li>
-                        <li><a href="{% url 'female_standards' %}">Женские</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url 'disciplines' %}">Дисциплины</a></li>
-                <li><a href="{% url 'participants_list' %}">Список участников</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <div class="main-content">
         <div class="content-left">
             <section class="hero-section">
