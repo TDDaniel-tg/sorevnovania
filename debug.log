@@ -1948,3 +1948,12 @@ WARNING 2025-04-15 15:29:57,221 basehttp 696 10040 "GET /static/images/%D0%BD%D0
 INFO 2025-04-15 15:30:00,354 basehttp 696 2720 "GET // HTTP/1.1" 200 20433
 INFO 2025-04-15 15:30:03,568 basehttp 696 2720 "GET /male-standards/ HTTP/1.1" 200 40442
 INFO 2025-04-15 15:30:05,403 basehttp 696 2720 "GET // HTTP/1.1" 200 20433
+INFO 2025-04-15 15:35:02,238 autoreload 1520 11236 Watching for file changes with StatReloader
+INFO 2025-04-15 15:35:05,813 basehttp 1520 7280 "GET /participants/ HTTP/1.1" 200 9274
+INFO 2025-04-15 15:35:05,896 basehttp 1520 7280 "GET /static/css/index.css HTTP/1.1" 304 0
+INFO 2025-04-15 15:35:05,899 basehttp 1520 11868 "GET /static/css/all.css HTTP/1.1" 304 0
+INFO 2025-04-15 15:35:05,900 basehttp 1520 4208 "GET /static/js/main.js HTTP/1.1" 304 0
+WARNING 2025-04-15 15:35:06,721 log 1520 4208 Not Found: /favicon.ico
+WARNING 2025-04-15 15:35:06,722 basehttp 1520 4208 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 15:40:30,866 basehttp 1520 4044 "GET /static/css/index.css HTTP/1.1" 304 0
+INFO 2025-04-15 15:40:30,867 basehttp 1520 13584 "GET /static/css/all.css HTTP/1.1" 304 0
