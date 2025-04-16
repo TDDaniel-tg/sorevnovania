@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const dropdownMenu = dropdown.querySelector('.dropdown-menu');
         
         dropdownTrigger.addEventListener('click', (e) => {
-            e.preventDefault();
+            e.preventDefault(); // Prevent navigation
             dropdown.classList.toggle('active');
             
             // Close other dropdowns
