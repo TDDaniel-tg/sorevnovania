@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const dropdownTrigger = dropdown.querySelector('.dropdown-trigger');
         const dropdownMenu = dropdown.querySelector('.dropdown-menu');
         
-        // Ensure dropdown-trigger does not navigate
+// Ensure dropdown-trigger does not navigate
         dropdownTrigger.setAttribute('href', '#');
 
         dropdownTrigger.addEventListener('click', (e) => {
