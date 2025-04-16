@@ -30,15 +30,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Handle dropdowns in mobile menu
+    // Handle dropdowns
     dropdowns.forEach(dropdown => {
-        const dropdownTrigger = dropdown.querySelector('p');
+        const dropdownTrigger = dropdown.querySelector('.dropdown-trigger');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
         dropdownTrigger.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                dropdown.classList.toggle('active');
-            }
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+            
+            // Close other dropdowns
+            dropdowns.forEach(otherDropdown => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove('active');
+                }
+            });
         });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
     });
 
     // Close menu when clicking on a link

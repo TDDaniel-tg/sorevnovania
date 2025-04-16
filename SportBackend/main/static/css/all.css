@@ -130,20 +130,41 @@ nav ul li a {
     display: none;
     position: absolute;
     top: 100%;
-    left: 10px;
-    background-color: rgb(0, 0, 0);
+    left: 0;
+    background-color: #1e3c72;
+    min-width: 200px;
     list-style: none;
     padding: 0;
     margin: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Add hover functionality */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #1e3c72;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .dropdown-menu li a {
-    padding: 10px 15px;
+    padding: 12px 20px;
     white-space: nowrap;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-menu li a:hover {
+    background-color: #2a5298;
+    color: #ff8c00;
+}
+
+.dropdown.active .dropdown-menu {
     display: block;
 }
 
@@ -234,10 +255,11 @@ header .burger {
 
     .dropdown-menu {
         position: static;
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.1);
         box-shadow: none;
         padding-left: 1rem;
-        display: none;
+        margin-top: 0.5rem;
+        border-radius: 0;
     }
 
     .dropdown.active .dropdown-menu {
@@ -247,6 +269,7 @@ header .burger {
     .dropdown-menu li a {
         padding: 10px 0;
         font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     body.menu-open {

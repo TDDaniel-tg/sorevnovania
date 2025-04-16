@@ -5,192 +5,168 @@
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/all.css' %}">
-<style>
-    body {
-        background-color: #f5f5f5 !important;
-        font-family: 'Montserrat', sans-serif !important;
-        color: #333 !important;
-    }
-    .main-header {
-        background: var(--color-surface);
-        padding: 1rem 0;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        box-shadow: var(--shadow-md);
-        transition: background 0.3s ease; /* Smooth background transition */
-    }
+    <style>
+        body {
+            background-color: #f5f5f5 !important;
+            font-family: 'Montserrat', sans-serif !important;
+            color: #333 !important;
+        }
+        .main-header {
+            background: var(--color-surface);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-md);
+            transition: background 0.3s ease; /* Smooth background transition */
+        }
 
-    .header-container {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 0 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        .header-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .logo img {
-        height: 40px;
-        width: auto;
-        border-radius: 8px;
-    }
-    .standards-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px; /* Add margin to account for fixed header */
-    }
-    .standard-card {
-        background: #fff !important;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        margin-bottom: 40px;
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .standard-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-    .standard-header {
-        background: linear-gradient(135deg, #1a1a1a, #333);
-        color: #fff !important;
-        padding: 25px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-    .standard-header h2 {
-        margin: 0;
-        font-size: 1.8rem;
-        font-weight: 700;
-        position: relative;
-        z-index: 1;
-        color: #fff !important;
-    }
-    .standard-header::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
-        z-index: 0;
-    }
-    .standard-content {
-        display: flex;
-        padding: 30px;
-        gap: 40px;
-        align-items: flex-start;
-        color: #333 !important;
-    }
-    .standard-image {
-        flex: 1;
-        max-width: 400px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .standard-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.5s ease;
-    }
-    .standard-image:hover img {
-        transform: scale(1.05);
-    }
-    .standard-info {
-        flex: 2;
-    }
-    .standard-info h3 {
-        color: #1a1a1a !important;
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-        font-weight: 600;
-    }
-    .standard-info p {
-        color: #666 !important;
-        line-height: 1.6;
-        margin-bottom: 25px;
-    }
-    .standards-table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0;
-        margin-top: 20px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        background: #fff !important;
-    }
-    .standards-table th,
-    .standards-table td {
-        padding: 15px;
-        text-align: center;
-        border: 1px solid #eee;
-        color: #333 !important;
-    }
-    .standards-table th {
-        background: #f8f8f8 !important;
-        font-weight: 600;
-        color: #333 !important;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        letter-spacing: 0.5px;
-    }
-    .standards-table tr:nth-child(even) {
-        background: #f9f9f9 !important;
-    }
-    .standards-table tr:hover {
-        background: #f0f0f0 !important;
-    }
-    .standards-table td:first-child {
-        font-weight: 500;
-        color: #333 !important;
-    }
-    @media (max-width: 768px) {
+        .logo img {
+            height: 40px;
+            width: auto;
+            border-radius: 8px;
+        }
+        .standards-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 80px; /* Add margin to account for fixed header */
+        }
+        .standard-card {
+            background: #fff !important;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .standard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .standard-header {
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: #fff !important;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .standard-header h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            color: #fff !important;
+        }
+        .standard-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            z-index: 0;
+        }
         .standard-content {
-            flex-direction: column;
+            display: flex;
+            padding: 30px;
+            gap: 40px;
+            align-items: flex-start;
+            color: #333 !important;
         }
         .standard-image {
-            max-width: 100%;
-            margin-bottom: 20px;
+            flex: 1;
+            max-width: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-    }
+        .standard-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .standard-image:hover img {
+            transform: scale(1.05);
+        }
+        .standard-info {
+            flex: 2;
+        }
+        .standard-info h3 {
+            color: #1a1a1a !important;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .standard-info p {
+            color: #666 !important;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .standards-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            background: #fff !important;
+        }
+        .standards-table th,
+        .standards-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #eee;
+            color: #333 !important;
+        }
+        .standards-table th {
+            background: #f8f8f8 !important;
+            font-weight: 600;
+            color: #333 !important;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+        .standards-table tr:nth-child(even) {
+            background: #f9f9f9 !important;
+        }
+        .standards-table tr:hover {
+            background: #f0f0f0 !important;
+        }
+        .standards-table td:first-child {
+            font-weight: 500;
+            color: #333 !important;
+        }
+        @media (max-width: 768px) {
+            .standard-content {
+                flex-direction: column;
+            }
+            .standard-image {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
     </style>
-    {% endblock %}
+{% endblock %}
 
-    {% block content %}
-</head>
-
+{% block content %}
 <body>
-    <header>
-        <div class="logo">
-            <a href="..//" >
-                <img src="../../static/images/иконка.jpg" alt="DDS">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'registration' %}">Регистрация</a></li>
-                <li class="dropdown">
-                    <p>Нормативы</p>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'male_standards' %}">Мужские</a></li>
-                        <li><a href="{% url 'female_standards' %}">Женские</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url 'disciplines' %}">Дисциплины</a></li>
-                <li><a href="{% url 'participants_list' %}">Список участников</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <div class="standards-container">
         <!-- Про жим лежа софт экипировка однопетельная -->
         <div class="standard-card">
