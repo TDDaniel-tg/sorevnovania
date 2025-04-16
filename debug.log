@@ -2002,6 +2002,7 @@ INFO 2025-04-15 16:43:17,451 basehttp 2492 13972 "GET /static/css/index.css HTTP
 INFO 2025-04-15 16:43:17,451 basehttp 2492 8420 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
 WARNING 2025-04-15 16:43:18,545 log 2492 13972 Not Found: /favicon.ico
 WARNING 2025-04-15 16:43:18,546 basehttp 2492 13972 "GET /favicon.ico HTTP/1.1" 404 4106
+<<<<<<< HEAD
 INFO 2025-04-15 19:29:36,262 autoreload 18804 9528 Watching for file changes with StatReloader
 INFO 2025-04-15 19:29:45,880 basehttp 18804 14844 code 400, message Bad request version ('^')
 INFO 2025-04-15 19:29:45,905 basehttp 18804 13440 - Broken pipe from ('127.0.0.1', 51019)
@@ -2060,3 +2061,60 @@ INFO 2025-04-15 19:35:07,655 basehttp 18804 19484 "GET /static/images/%D0%B8%D0%
 INFO 2025-04-15 19:35:07,687 basehttp 18804 19488 "GET /static/js/registr.js HTTP/1.1" 304 0
 INFO 2025-04-15 19:35:07,687 basehttp 18804 19484 "GET /static/js/timer.js HTTP/1.1" 304 0
 INFO 2025-04-15 19:35:07,719 basehttp 18804 19568 "GET / HTTP/1.1" 200 19540
+=======
+INFO 2025-04-15 16:47:06,864 autoreload 1812 6364 Watching for file changes with StatReloader
+INFO 2025-04-15 16:47:09,879 basehttp 1812 8220 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 16:47:09,940 basehttp 1812 8220 "GET /static/css/index.css HTTP/1.1" 200 20702
+INFO 2025-04-15 16:47:09,961 basehttp 1812 8404 "GET /static/css/all.css HTTP/1.1" 200 4091
+INFO 2025-04-15 16:47:09,962 basehttp 1812 12912 "GET /static/js/main.js HTTP/1.1" 200 665
+INFO 2025-04-15 16:47:09,963 basehttp 1812 11408 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 16:47:09,965 basehttp 1812 7396 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 16:47:09,965 basehttp 1812 8660 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+WARNING 2025-04-15 16:47:11,165 log 1812 8660 Not Found: /favicon.ico
+WARNING 2025-04-15 16:47:11,166 basehttp 1812 8660 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 16:47:17,604 basehttp 1812 8660 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 16:47:17,628 basehttp 1812 8404 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 16:47:17,628 basehttp 1812 8220 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 16:47:17,628 basehttp 1812 12912 "GET /static/js/main.js HTTP/1.1" 200 665
+INFO 2025-04-15 16:47:17,629 basehttp 1812 11408 "GET /static/css/all.css HTTP/1.1" 200 4091
+INFO 2025-04-15 16:47:17,629 basehttp 1812 8660 "GET /static/css/index.css HTTP/1.1" 200 20702
+INFO 2025-04-15 16:47:17,629 basehttp 1812 7396 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+WARNING 2025-04-15 16:47:18,016 log 1812 7396 Not Found: /favicon.ico
+WARNING 2025-04-15 16:47:18,017 basehttp 1812 7396 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 16:48:11,096 basehttp 1812 7396 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 16:48:11,114 basehttp 1812 8220 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 16:48:11,114 basehttp 1812 11408 "GET /static/css/all.css HTTP/1.1" 200 4091
+INFO 2025-04-15 16:48:11,114 basehttp 1812 8404 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 16:48:11,114 basehttp 1812 7396 "GET /static/css/index.css HTTP/1.1" 200 20700
+INFO 2025-04-15 16:48:11,115 basehttp 1812 8660 "GET /static/js/main.js HTTP/1.1" 200 665
+INFO 2025-04-15 16:48:11,115 basehttp 1812 12912 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+WARNING 2025-04-15 16:48:12,434 log 1812 11408 Not Found: /favicon.ico
+WARNING 2025-04-15 16:48:12,434 basehttp 1812 11408 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 16:48:28,992 basehttp 1812 11408 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 16:48:29,016 basehttp 1812 8220 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 16:48:29,016 basehttp 1812 12912 "GET /static/css/all.css HTTP/1.1" 200 4091
+INFO 2025-04-15 16:48:29,017 basehttp 1812 7396 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 16:48:29,017 basehttp 1812 8404 "GET /static/js/main.js HTTP/1.1" 200 665
+INFO 2025-04-15 16:48:29,017 basehttp 1812 11408 "GET /static/css/index.css HTTP/1.1" 200 20699
+INFO 2025-04-15 16:48:29,017 basehttp 1812 8660 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+WARNING 2025-04-15 16:48:29,453 log 1812 8404 Not Found: /favicon.ico
+WARNING 2025-04-15 16:48:29,453 basehttp 1812 8404 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 16:48:35,634 basehttp 1812 8404 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 16:48:35,657 basehttp 1812 7396 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 16:48:35,657 basehttp 1812 11408 "GET /static/css/all.css HTTP/1.1" 200 4091
+INFO 2025-04-15 16:48:35,657 basehttp 1812 12912 "GET /static/js/main.js HTTP/1.1" 200 665
+INFO 2025-04-15 16:48:35,657 basehttp 1812 8220 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 16:48:35,657 basehttp 1812 8404 "GET /static/css/index.css HTTP/1.1" 200 20701
+INFO 2025-04-15 16:48:35,657 basehttp 1812 8660 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+WARNING 2025-04-15 16:48:36,016 log 1812 8220 Not Found: /favicon.ico
+WARNING 2025-04-15 16:48:36,017 basehttp 1812 8220 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-15 16:48:54,299 basehttp 1812 8220 "GET / HTTP/1.1" 200 20433
+INFO 2025-04-15 16:48:54,314 basehttp 1812 8660 "GET /static/css/all.css HTTP/1.1" 200 4091
+INFO 2025-04-15 16:48:54,314 basehttp 1812 7396 "GET /static/js/timer.js HTTP/1.1" 200 1667
+INFO 2025-04-15 16:48:54,314 basehttp 1812 11408 "GET /static/js/registr.js HTTP/1.1" 200 4777
+INFO 2025-04-15 16:48:54,314 basehttp 1812 8404 "GET /static/js/main.js HTTP/1.1" 200 665
+INFO 2025-04-15 16:48:54,315 basehttp 1812 8220 "GET /static/css/index.css HTTP/1.1" 200 20678
+INFO 2025-04-15 16:48:54,315 basehttp 1812 12912 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 200 40370
+WARNING 2025-04-15 16:48:54,687 log 1812 12912 Not Found: /favicon.ico
+WARNING 2025-04-15 16:48:54,687 basehttp 1812 12912 "GET /favicon.ico HTTP/1.1" 404 4106
+>>>>>>> 71c09c9 (first commit)
