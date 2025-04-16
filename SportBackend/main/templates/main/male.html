@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мужские нормативы</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../static/css/all.css">
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Мужские нормативы - Спортивная Олимпиада 2025{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
     <style>
         body {
             background-color: #f5f5f5 !important;
@@ -163,155 +162,10 @@
                 margin-bottom: 20px;
             }
         }
-        @media (max-width: 768px) {
-    header {
-        flex-direction: row;
-        align-items: center;
-        padding: 1rem;
-        position: fixed;
-        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    header .logo {
-        position: static;
-        z-index: 1001;
-    }
-
-    header .burger {
-        display: block;
-        cursor: pointer;
-        z-index: 1001;
-        margin-left: auto;
-        padding: 10px;
-    }
-
-    header .burger div {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px 0;
-        transition: all 0.3s ease;
-        border-radius: 2px;
-    }
-
-    header .burger.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    header .burger.active div:nth-child(2) {
-        opacity: 0;
-    }
-
-    header .burger.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    header nav {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-        backdrop-filter: blur(5px);
-        padding-top: 80px;
-        z-index: 1000;
-    }
-
-    header nav.active {
-        display: flex;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 1.5rem;
-        width: 100%;
-        padding: 0 2rem;
-    }
-
-    header nav ul li {
-        text-align: left;
-        width: 100%;
-    }
-
-    header nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 15px 0;
-        font-size: 1.2rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .dropdown-menu {
-        position: static;
-        background-color: transparent;
-        box-shadow: none;
-        padding-left: 1rem;
-        display: none;
-    }
-
-    .dropdown.active .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-menu li a {
-        padding: 10px 0;
-        font-size: 1.1rem;
-    }
-
-    body.menu-open {
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 0.8rem;
-    }
-
-    header .logo img {
-        width: 35px;
-        height: 35px;
-    }
-
-    header nav ul {
-        padding: 0 1.5rem;
-    }
-
-    header nav ul li a {
-        font-size: 1.1rem;
-        padding: 12px 0;
-    }
-}
-
-
     </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="..//" >
-                <img src="../../static/images/иконка.jpg" alt="DDS">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'registration' %}">Регистрация</a></li>
-                <li class="dropdown">
-                    <p>Нормативы</p>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'male_standards' %}">Мужские</a></li>
-                        <li><a href="{% url 'female_standards' %}">Женские</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url 'disciplines' %}">Дисциплины</a></li>
-                <li><a href="{% url 'participants_list' %}">Список участников</a></li>
-            </ul>
-        </nav>
-    </header>
+{% endblock %}
 
+{% block content %}
     <div class="standards-container">
         <!-- Про жим лежа софт экипировка однопетельная -->
         <div class="standard-card">
@@ -320,7 +174,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Про, жим лежа софт экипировка однопетельная муж.jpg" alt="Про жим лежа софт экипировка однопетельная">
+                    <img src="{% static 'images/Про, жим лежа софт экипировка однопетельная муж.jpg' %}" alt="Про жим лежа софт экипировка однопетельная">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -374,7 +228,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Про, народный бицепс муж.jpg" alt="Про народный бицепс">
+                    <img src="{% static 'images/Про, народный бицепс муж.jpg' %}" alt="Про народный бицепс">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -428,7 +282,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Про, строгий подьем на бицепс муж.jpg" alt="Про строгий подъем на бицепс">
+                    <img src="{% static 'images/Про, строгий подьем на бицепс муж.jpg' %}" alt="Про строгий подъем на бицепс">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -482,7 +336,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Про, силовое двоеборье муж.jpg" alt="Про силовое двоеборье">
+                    <img src="{% static 'images/Про, силовое двоеборье муж.jpg' %}" alt="Про силовое двоеборье">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -536,7 +390,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Про, становая тяга без экип муж.jpg" alt="Про становая тяга без экип">
+                    <img src="{% static 'images/Про, становая тяга без экип муж.jpg' %}" alt="Про становая тяга без экип">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -590,7 +444,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Про, военный народный жим муж.jpg" alt="Про военный народный жим">
+                    <img src="{% static 'images/Про, военный народный жим муж.jpg' %}" alt="Про военный народный жим">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -644,7 +498,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Про жим лежа, без экип муж.jpg" alt="Про жим лежа без экип">
+                    <img src="{% static 'images/Про жим лежа, без экип муж.jpg' %}" alt="Про жим лежа без экип">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -698,7 +552,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/военный.jpg" alt="Военный жим">
+                    <img src="{% static 'images/военный.jpg' %}" alt="Военный жим">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -752,7 +606,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/становая тяга без экип муж.jpg" alt="Становая тяга без экип">
+                    <img src="{% static 'images/становая тяга без экип муж.jpg' %}" alt="Становая тяга без экип">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -806,7 +660,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/силовое двоеборье муж.jpg" alt="Силовое двоеборье">
+                    <img src="{% static 'images/силовое двоеборье муж.jpg' %}" alt="Силовое двоеборье">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -860,7 +714,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/строгий подъем на бицепс любители муж.jpg" alt="Строгий подъем на бицепс любители">
+                    <img src="{% static 'images/строгий подъем на бицепс любители муж.jpg' %}" alt="Строгий подъем на бицепс любители">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -914,7 +768,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/народный бицепс про муж.jpg" alt="Народный бицепс про">
+                    <img src="{% static 'images/народный бицепс про муж.jpg' %}" alt="Народный бицепс про">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -968,7 +822,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/жим лежа софт экип муж.jpg" alt="Жим лежа софт экип">
+                    <img src="{% static 'images/жим лежа софт экип муж.jpg' %}" alt="Жим лежа софт экип">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -1022,7 +876,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/народный жим муж.jpg" alt="Народный жим">
+                    <img src="{% static 'images/народный жим муж.jpg' %}" alt="Народный жим">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -1076,7 +930,7 @@
             </div>
             <div class="standard-content">
                 <div class="standard-image">
-                    <img src="../../static/images/Армлифтинг муж.jpg" alt="Армлифтинг">
+                    <img src="{% static 'images/Армлифтинг муж.jpg' %}" alt="Армлифтинг">
                 </div>
                 <div class="standard-info">
                     <h3>Описание</h3>
@@ -1123,5 +977,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}
