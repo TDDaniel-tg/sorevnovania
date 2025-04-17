@@ -4,19 +4,14 @@ from django.core.validators import RegexValidator, MinValueValidator, MaxValueVa
 class Participant(models.Model):
     name = models.CharField(
         max_length=100,
-        validators=[
-            RegexValidator(
-                regex=r'^[А-Яа-яЁё\s-]+$',
-                message='Имя должно содержать только буквы, пробелы и дефис'
-            )
-        ]
+        validators=[]  # Removed restrictive regex validator
     )
     phone_number = models.CharField(
         max_length=13,
         validators=[
             RegexValidator(
-                regex=r'^\+996[0-9]{9}$',
-                message='Номер телефона должен быть в формате +996XXXXXXXXX'
+                regex=r'^(\+996[0-9]{9}|none)$',
+                message='Номер телефона должен быть в формате +996XXXXXXXXX или "none"'
             )
         ]
     )
@@ -43,17 +38,13 @@ class Participant(models.Model):
     )
     discipline = models.CharField(
         max_length=50,
-        validators=[
-            RegexValidator(
-                regex=r'^[А-Яа-яЁё\s-]+$',
-                message='Дисциплина должна содержать только буквы, пробелы и дефис'
-            )
-        ]
+        validators=[]  # Removed restrictive regex validator
     )
     registration_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.name} - {self.discipline}"
+        phone_display = self.phone_number if self.phone_number != "none" else "none"
+        return f"{self.name} - {self.discipline} - {phone_display}"
 
     class Meta:
-        ordering = ['-registration_date'] 
+        ordering = ['-registration_date']

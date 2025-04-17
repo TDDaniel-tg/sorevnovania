@@ -2396,3 +2396,86 @@ INFO 2025-04-18 00:26:27,598 basehttp 4572 8428 "GET /static/admin/js/prepopulat
 INFO 2025-04-18 00:26:27,600 basehttp 4572 8428 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
 INFO 2025-04-18 00:26:27,607 basehttp 4572 8428 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
 INFO 2025-04-18 00:26:27,607 basehttp 4572 6548 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-04-18 01:58:27,225 autoreload 16776 16828 Watching for file changes with StatReloader
+INFO 2025-04-18 01:58:42,440 basehttp 16776 16968 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11920
+INFO 2025-04-18 01:58:42,497 basehttp 16776 14528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 01:58:42,564 basehttp 16776 14524 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 01:58:42,567 basehttp 16776 14524 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 01:58:42,569 basehttp 16776 14524 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 01:58:42,572 basehttp 16776 14524 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 01:58:42,575 basehttp 16776 14524 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 01:58:42,578 basehttp 16776 14524 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 01:58:42,581 basehttp 16776 14524 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 01:58:42,584 basehttp 16776 14612 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 01:58:42,586 basehttp 16776 14524 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 01:58:42,596 basehttp 16776 16968 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 01:58:42,601 basehttp 16776 14632 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 01:58:42,603 basehttp 16776 14852 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 01:58:42,610 basehttp 16776 14528 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 01:58:42,703 basehttp 16776 14632 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 01:58:42,708 basehttp 16776 14632 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 01:58:42,713 basehttp 16776 14632 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 01:58:42,714 basehttp 16776 14528 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 01:58:42,723 basehttp 16776 14528 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 01:58:42,751 basehttp 16776 14528 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 01:58:43,071 log 16776 14528 Not Found: /favicon.ico
+WARNING 2025-04-18 01:58:43,072 basehttp 16776 14528 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 01:58:47,737 basehttp 16776 14528 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11920
+INFO 2025-04-18 01:58:47,779 basehttp 16776 14528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 01:58:48,952 basehttp 16776 14528 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11920
+INFO 2025-04-18 01:58:49,003 basehttp 16776 14528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 01:58:54,490 basehttp 16776 14528 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11911
+INFO 2025-04-18 01:58:54,529 basehttp 16776 14528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 01:59:05,183 basehttp 16776 14528 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 01:59:05,223 basehttp 16776 14528 "GET /admin/participants/participant/ HTTP/1.1" 200 16961
+INFO 2025-04-18 01:59:05,266 basehttp 16776 14528 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-04-18 01:59:05,277 basehttp 16776 14528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 01:59:05,278 basehttp 16776 14632 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-04-18 01:59:05,283 basehttp 16776 14632 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-04-18 01:59:05,305 basehttp 16776 14528 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-04-18 01:59:05,305 basehttp 16776 14632 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-04-18 01:59:05,305 basehttp 16776 14524 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-04-18 01:59:05,305 basehttp 16776 16968 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-04-18 01:59:42,247 autoreload 16776 16828 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 01:59:43,129 autoreload 2084 15116 Watching for file changes with StatReloader
+INFO 2025-04-18 01:59:44,414 autoreload 2084 15116 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 01:59:44,908 autoreload 13468 15848 Watching for file changes with StatReloader
+INFO 2025-04-18 01:59:47,468 basehttp 13468 16456 "GET /admin/participants/participant/ HTTP/1.1" 200 16649
+INFO 2025-04-18 01:59:47,525 basehttp 13468 15788 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 01:59:47,559 basehttp 13468 16456 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 01:59:47,563 basehttp 13468 16456 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 01:59:47,567 basehttp 13468 16456 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 01:59:47,569 basehttp 13468 16456 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 01:59:47,571 basehttp 13468 16456 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 01:59:47,573 basehttp 13468 16456 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 01:59:47,575 basehttp 13468 16456 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 01:59:47,581 basehttp 13468 16456 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 01:59:47,585 basehttp 13468 16456 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-04-18 01:59:47,589 basehttp 13468 14816 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 01:59:47,590 basehttp 13468 4516 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 01:59:47,604 basehttp 13468 2888 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 01:59:47,619 basehttp 13468 16800 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-04-18 01:59:47,630 basehttp 13468 15788 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 01:59:47,733 basehttp 13468 15788 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 01:59:47,737 basehttp 13468 15788 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 01:59:47,738 basehttp 13468 16800 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-04-18 01:59:47,753 basehttp 13468 15788 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-04-18 01:59:47,753 basehttp 13468 4516 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-04-18 01:59:47,753 basehttp 13468 16800 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-18 01:59:47,754 basehttp 13468 2888 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+WARNING 2025-04-18 01:59:47,831 log 13468 2888 Not Found: /favicon.ico
+WARNING 2025-04-18 01:59:47,832 basehttp 13468 2888 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 01:59:51,991 basehttp 13468 2888 "GET /admin/participants/participant/8/change/ HTTP/1.1" 200 12163
+INFO 2025-04-18 01:59:52,036 basehttp 13468 2888 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 01:59:56,934 basehttp 13468 2888 "POST /admin/participants/participant/8/change/ HTTP/1.1" 302 0
+INFO 2025-04-18 01:59:56,957 basehttp 13468 2888 "GET /admin/participants/participant/ HTTP/1.1" 200 16996
+INFO 2025-04-18 01:59:57,003 basehttp 13468 2888 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:00:19,055 basehttp 13468 2888 "GET /admin/participants/participant/8/change/ HTTP/1.1" 200 12207
+INFO 2025-04-18 02:00:19,101 basehttp 13468 2888 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:00:22,752 basehttp 13468 2888 "GET /admin/participants/participant/8/delete/ HTTP/1.1" 200 7819
+INFO 2025-04-18 02:00:22,809 basehttp 13468 2888 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-04-18 02:00:24,280 basehttp 13468 2888 "POST /admin/participants/participant/8/delete/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:00:24,299 basehttp 13468 2888 "GET /admin/participants/participant/ HTTP/1.1" 200 15798
+INFO 2025-04-18 02:00:24,346 basehttp 13468 2888 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:00:38,184 autoreload 13468 15848 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:00:38,879 autoreload 15348 14184 Watching for file changes with StatReloader
