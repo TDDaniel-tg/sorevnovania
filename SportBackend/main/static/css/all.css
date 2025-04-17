@@ -172,9 +172,7 @@ header .burger {
     display: none;
 }
 
-/*header .burger {
-    display: none;
-}*/
+
 @media (max-width: 768px) {
     header {
         flex-direction: row;
