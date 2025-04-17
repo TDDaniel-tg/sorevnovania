@@ -127,39 +127,45 @@ nav ul li a {
 }
 
 .dropdown-menu {
-    position: static;
-    background-color: transparent;
-    box-shadow: none;
-    padding-left: 1rem;
     display: none;
-    border-left: 2px solid rgba(255, 255, 255, 0.1);
-    margin-left: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e3c72;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Add hover functionality */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #1e3c72;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    padding: 12px 20px;
+    white-space: nowrap;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #2a5298;
+    color: #ff8c00;
 }
 
 .dropdown.active .dropdown-menu {
     display: block;
-    animation: slideDown 0.3s ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.dropdown-menu li a {
-    padding: 10px 0;
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.dropdown-menu li a:hover {
-    color: #ff8c00;
 }
 
 header .burger {
@@ -249,19 +255,38 @@ header .burger {
 
     .dropdown-menu {
         position: static;
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.1);
         box-shadow: none;
         padding-left: 1rem;
-        display: none;
-    }
-
-    .dropdown.active .dropdown-menu {
-        display: block;
+        margin-top: 0.5rem;
+        border-radius: 0;
+        min-width: auto;
     }
 
     .dropdown-menu li a {
         padding: 10px 0;
         font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     body.menu-open {

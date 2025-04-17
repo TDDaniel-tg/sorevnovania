@@ -3,946 +3,214 @@
 
 {% block title %}Мужские нормативы{% endblock %}
 
-{% block extra_css %}
-<style>
+{% block content %}
+    <style>
+    :root {
+        --primary-color: #1a237e;
+        --secondary-color: #3949ab;
+        --accent-color: #f50057;
+        --background-color: #f5f6fa;
+        --text-color: #2c3e50;
+        --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        --hover-transform: scale(1.03);
+        --transition-speed: 0.4s;
+        --border-radius: 16px;
+    }
+
     body {
-        background-color: #f5f5f5;
-        font-family: 'Montserrat', sans-serif;
-        color: #333;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     }
+
     .standards-container {
-        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2.5rem;
+        padding: 3rem 2rem;
+        max-width: 1600px;
         margin: 0 auto;
-        padding: 20px;
     }
+
     .standard-card {
-        background: #fff;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        margin-bottom: 40px;
+        background: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--card-shadow);
         overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        margin-top: 65px;
+        transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid rgba(0, 0, 0, 0.05);
     }
+
     .standard-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        transform: var(--hover-transform);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
+
     .standard-header {
-        background: linear-gradient(135deg, #1a1a1a, #333);
-        color: #fff;
-        padding: 25px;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 1.25rem;
+        font-size: 1.3rem;
+        font-weight: 600;
         text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .standard-image {
         position: relative;
+        width: 100%;
+        padding-top: 66.67%; /* 3:2 Aspect Ratio */
         overflow: hidden;
     }
-    .standard-header h2 {
-        margin: 0;
-        font-size: 1.8rem;
-        font-weight: 700;
-        position: relative;
-        z-index: 1;
-    }
-    .standard-header::after {
-        content: '';
+
+    .standard-image img {
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
-        z-index: 0;
-    }
-    .standard-content {
-        display: flex;
-        padding: 30px;
-        gap: 40px;
-        align-items: flex-start;
-    }
-    .standard-image {
-        flex: 1;
-        max-width: 400px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .standard-image img {
         width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.5s ease;
+        height: 100%;
+        object-fit: cover;
+        transition: transform var(--transition-speed);
     }
+
     .standard-image:hover img {
-        transform: scale(1.05);
+        transform: scale(1.15);
     }
+
     .standard-info {
-        flex: 2;
+        padding: 1.5rem;
     }
-    .standard-info h3 {
-        color: #1a1a1a;
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-        font-weight: 600;
+
+    .standard-description {
+        margin-bottom: 1.25rem;
+        color: #4a5568;
+        font-size: 1.05rem;
+        line-height: 1.7;
     }
-    .standard-info p {
-        color: #666;
-        line-height: 1.6;
-        margin-bottom: 25px;
+
+    .standard-difficulty {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
+
+    .difficulty-pro {
+        background-color: var(--accent-color);
+        color: white;
+        box-shadow: 0 4px 6px rgba(245, 0, 87, 0.2);
+    }
+
+    .difficulty-basic {
+        background-color: var(--secondary-color);
+        color: white;
+        box-shadow: 0 4px 6px rgba(57, 73, 171, 0.2);
+    }
+
+    .difficulty-special {
+        background-color: #7b1fa2;
+        color: white;
+        box-shadow: 0 4px 6px rgba(123, 31, 162, 0.2);
+    }
+
     .standards-table {
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
-        margin-top: 20px;
-        border-radius: 10px;
+        margin-top: 1rem;
+        font-size: 1rem;
+        border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
     .standards-table th,
     .standards-table td {
-        padding: 15px;
+        padding: 0.75rem;
         text-align: center;
-        border: 1px solid #eee;
+        border: none;
     }
+
     .standards-table th {
-        background: #f8f8f8;
+        background-color: var(--primary-color);
+        color: white;
         font-weight: 600;
-        color: #333;
         text-transform: uppercase;
         font-size: 0.9rem;
         letter-spacing: 0.5px;
     }
+
     .standards-table tr:nth-child(even) {
-        background: #f9f9f9;
+        background-color: #f8f9fa;
     }
+
     .standards-table tr:hover {
-        background: #f0f0f0;
+        background-color: #e3f2fd;
     }
-    .standards-table td:first-child {
-        font-weight: 500;
+
+    .standards-table td {
+        border-bottom: 1px solid #e2e8f0;
     }
+
     @media (max-width: 768px) {
-        .standard-content {
-            flex-direction: column;
+        .standards-container {
+            grid-template-columns: 1fr;
+            padding: 1.5rem;
+            gap: 2rem;
         }
-        .standard-image {
-            max-width: 100%;
-            margin-bottom: 20px;
+
+        .standard-header {
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+
+        .standard-info {
+            padding: 1.25rem;
+        }
+
+        .standards-table {
+            font-size: 0.95rem;
         }
     }
-</style>
-{% endblock %}
+    </style>
 
-{% block content %}
-<div class="standards-container">
-    <!-- Про жим лежа софт экипировка однопетельная -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Про жим лежа софт экипировка однопетельная</h2>
-        </div>
-        <div class="standard-content">
+    <div class="standards-container">
+    {% for standard in standards %}
+        <div class="standard-card">
+            <div class="standard-header">
+                {{ standard.title }}
+            </div>
             <div class="standard-image">
-                <img src="{% static 'images/Про, жим лежа софт экипировка однопетельная муж.jpg' %}" alt="Про жим лежа софт экипировка однопетельная">
+                <img src="{% static standard.image %}" alt="{{ standard.title }}">
             </div>
             <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина жима лежа с использованием софт экипировки однопетельного типа. Требует высокой техники выполнения и специальной подготовки.</p>
+                <p class="standard-description">{{ standard.description }}</p>
+                <div class="standard-difficulty {% if standard.is_pro %}difficulty-pro{% elif standard.difficulty == 'Специальная подготовка' %}difficulty-special{% else %}difficulty-basic{% endif %}">
+                    {{ standard.difficulty }}
+                </div>
                 <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>130</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>140</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>160</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>170</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>180</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>190</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Весовая категория</th>
+                            <th>Норматив (кг)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for category in standard.categories %}
+                            <tr>
+                                <td>{{ category.weight }}</td>
+                                <td>{{ category.norm }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
                 </table>
             </div>
         </div>
+    {% endfor %}
     </div>
-
-    <!-- Про народный бицепс -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Про народный бицепс</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/Про, народный бицепс муж.jpg' %}" alt="Про народный бицепс">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина подъема штанги на бицепс. Требует точной техники и контроля движения.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>85</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>105</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>115</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Про строгий подъем на бицепс -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Про строгий подъем на бицепс</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/Про, строгий подьем на бицепс муж.jpg' %}" alt="Про строгий подъем на бицепс">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина строгого подъема штанги на бицепс. Требует идеальной техники и полного контроля движения.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>85</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>105</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Про силовое двоеборье -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Про силовое двоеборье</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/Про, силовое двоеборье муж.jpg' %}" alt="Про силовое двоеборье">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина, включающая жим лежа и становую тягу. Требует комплексной подготовки и выносливости.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>320</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>340</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>360</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>380</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>400</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>420</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>440</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Про становая тяга без экип -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Про становая тяга без экип</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/Про, становая тяга без экип муж.jpg' %}" alt="Про становая тяга без экип">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина становой тяги без использования экипировки. Требует отличной техники и силы.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>240</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>260</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>280</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>320</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>340</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Про военный народный жим -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Про военный народный жим</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/Про, военный народный жим муж.jpg' %}" alt="Про военный народный жим">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина военного жима. Требует специальной подготовки и техники выполнения.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>105</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>115</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>125</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Про жим лежа без экип -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Про жим лежа без экип</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/Про жим лежа, без экип муж.jpg' %}" alt="Про жим лежа без экип">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина жима лежа без использования экипировки. Требует чистой техники и силы.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>130</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>140</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>160</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>170</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>180</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Военный жим -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Военный жим</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/военный.jpg' %}" alt="Военный жим">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Классическая дисциплина военного жима. Требует хорошей техники и контроля.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>85</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>105</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>115</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Становая тяга без экип -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Становая тяга без экип</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/становая тяга без экип муж.jpg' %}" alt="Становая тяга без экип">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Классическая дисциплина становой тяги без экипировки. Требует правильной техники и базовой силы.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>180</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>240</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>260</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>280</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>320</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Силовое двоеборье -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Силовое двоеборье</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/силовое двоеборье муж.jpg' %}" alt="Силовое двоеборье">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Классическая дисциплина, включающая жим лежа и становую тягу. Требует базовой подготовки.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>270</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>310</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>330</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>350</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>370</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>390</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Строгий подъем на бицепс любители -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Строгий подъем на бицепс любители</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/строгий подъем на бицепс любители муж.jpg' %}" alt="Строгий подъем на бицепс любители">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Дисциплина для любителей строгого подъема штанги на бицепс. Требует базовой техники.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>65</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>85</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>95</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Народный бицепс про -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Народный бицепс про</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/народный бицепс про муж.jpg' %}" alt="Народный бицепс про">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Профессиональная дисциплина народного бицепса. Требует продвинутой техники.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>85</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>105</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Жим лежа софт экип -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Жим лежа софт экип</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/жим лежа софт экип муж.jpg' %}" alt="Жим лежа софт экип">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Дисциплина жима лежа с использованием софт экипировки. Требует базовой подготовки.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>130</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>140</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>160</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>170</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Народный жим -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Народный жим</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/народный жим муж.jpg' %}" alt="Народный жим">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Классическая дисциплина народного жима. Требует базовой техники.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>85</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>105</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>115</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Армлифтинг -->
-    <div class="standard-card">
-        <div class="standard-header">
-            <h2>Армлифтинг</h2>
-        </div>
-        <div class="standard-content">
-            <div class="standard-image">
-                <img src="{% static 'images/Армлифтинг муж.jpg' %}" alt="Армлифтинг">
-            </div>
-            <div class="standard-info">
-                <h3>Описание</h3>
-                <p>Специализированная дисциплина армлифтинга. Требует специальной подготовки.</p>
-                <table class="standards-table">
-                    <tr>
-                        <th>Весовая категория</th>
-                        <th>Норматив (кг)</th>
-                    </tr>
-                    <tr>
-                        <td>До 59 кг</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>До 66 кг</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>До 74 кг</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>До 83 кг</td>
-                        <td>105</td>
-                    </tr>
-                    <tr>
-                        <td>До 93 кг</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>До 105 кг</td>
-                        <td>115</td>
-                    </tr>
-                    <tr>
-                        <td>До 120 кг</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>Свыше 120 кг</td>
-                        <td>125</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
 {% endblock %}

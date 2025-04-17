@@ -30,25 +30,34 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Handle dropdowns in mobile menu
+    // Handle dropdowns
     dropdowns.forEach(dropdown => {
-        const dropdownTrigger = dropdown.querySelector('p');
-        const dropdownLinks = dropdown.querySelectorAll('.dropdown-menu a');
+        const dropdownTrigger = dropdown.querySelector('.dropdown-trigger');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
         
-        dropdownTrigger.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                e.stopPropagation();
-                dropdown.classList.toggle('active');
-            }
-        });
+        // Ensure dropdown-trigger does not navigate
+        dropdownTrigger.setAttribute('href', '#');
 
-        // Предотвращаем закрытие меню при клике на пункты выпадающего списка
-        dropdownLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.stopPropagation();
+        dropdownTrigger.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent navigation
+            dropdown.classList.toggle('active');
+            
+            // Close other dropdowns
+            dropdowns.forEach(otherDropdown => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove('active');
+                }
             });
         });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
     });
 
     // Close menu when clicking on a link
