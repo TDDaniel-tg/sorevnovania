@@ -33,11 +33,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle dropdowns in mobile menu
     dropdowns.forEach(dropdown => {
         const dropdownTrigger = dropdown.querySelector('p');
+        const dropdownLinks = dropdown.querySelectorAll('.dropdown-menu a');
+        
         dropdownTrigger.addEventListener('click', (e) => {
             if (window.innerWidth <= 768) {
                 e.preventDefault();
+                e.stopPropagation();
                 dropdown.classList.toggle('active');
             }
+        });
+
+        // Предотвращаем закрытие меню при клике на пункты выпадающего списка
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
         });
     });
 
