@@ -127,6 +127,34 @@
             .social-links {
                 justify-content: center;
             }
+
+            .dropdown-menu {
+                display: none;
+                position: static;
+                background: #f8f9fa;
+                padding: 10px;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+            
+            .dropdown-menu.show {
+                display: block;
+            }
+            
+            .dropdown-menu li {
+                margin: 5px 0;
+            }
+            
+            .dropdown-menu a {
+                display: block;
+                padding: 8px 15px;
+                color: #333;
+                text-decoration: none;
+            }
+            
+            .dropdown-menu a:hover {
+                background: #e9ecef;
+            }
         }
     </style>
     {% block extra_css %}{% endblock %}
@@ -200,6 +228,24 @@
     </footer>
 
     <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+            
+            dropdownTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Закрываем меню при клике вне его
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.dropdown')) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
     {% block extra_js %}{% endblock %}
 </body>
 </html>
