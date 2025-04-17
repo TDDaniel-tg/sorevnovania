@@ -7,11 +7,11 @@ class Participant(models.Model):
         validators=[]  # Removed restrictive regex validator
     )
     phone_number = models.CharField(
-        max_length=13,
+        max_length=16,  # Increased max_length to accommodate international numbers
         validators=[
             RegexValidator(
-                regex=r'^(\+996[0-9]{9}|none)$',
-                message='Номер телефона должен быть в формате +996XXXXXXXXX или "none"'
+                regex=r'^none$|^\+?[1-9](\d{1,3} ?){1,4}\d$',  # Allow "none" or international format
+                message='Номер телефона должен быть в международном формате, начиная с "+" и может содержать пробелы, либо быть "none"'
             )
         ]
     )
@@ -26,7 +26,7 @@ class Participant(models.Model):
     )
     weight_category = models.IntegerField(
         validators=[
-            MinValueValidator(30, message='Весовая категория не может быть меньше 30 кг'),
+            MinValueValidator(0, message='Весовая категория не может быть меньше 30 кг'),
             MaxValueValidator(150, message='Весовая категория не может быть больше 150 кг')
         ]
     )
@@ -37,7 +37,7 @@ class Participant(models.Model):
         ]
     )
     discipline = models.CharField(
-        max_length=50,
+        max_length=120,
         validators=[]  # Removed restrictive regex validator
     )
     registration_date = models.DateTimeField(auto_now_add=True)
@@ -45,6 +45,12 @@ class Participant(models.Model):
     def __str__(self):
         phone_display = self.phone_number if self.phone_number != "none" else "none"
         return f"{self.name} - {self.discipline} - {phone_display}"
+
+    def set_phone_to_none(self):
+        """Sets the phone number to 'none'."""
+        self.phone_number = "none"
+        self.full_clean()  # Validate the model instance before saving
+        self.save()
 
     class Meta:
         ordering = ['-registration_date']

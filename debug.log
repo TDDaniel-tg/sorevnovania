@@ -2479,3 +2479,1037 @@ INFO 2025-04-18 02:00:24,299 basehttp 13468 2888 "GET /admin/participants/partic
 INFO 2025-04-18 02:00:24,346 basehttp 13468 2888 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-04-18 02:00:38,184 autoreload 13468 15848 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
 INFO 2025-04-18 02:00:38,879 autoreload 15348 14184 Watching for file changes with StatReloader
+INFO 2025-04-18 02:02:38,815 autoreload 1764 11284 Watching for file changes with StatReloader
+INFO 2025-04-18 02:02:49,049 basehttp 1764 14952 "GET /admin/participants/participant/ HTTP/1.1" 200 15529
+INFO 2025-04-18 02:02:49,090 basehttp 1764 15652 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:02:49,148 basehttp 1764 14600 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:02:49,150 basehttp 1764 15908 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-04-18 02:02:49,151 basehttp 1764 14600 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:02:49,153 basehttp 1764 15908 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:02:49,153 basehttp 1764 14600 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:02:49,155 basehttp 1764 14600 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:02:49,155 basehttp 1764 15908 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:02:49,157 basehttp 1764 14600 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:02:49,158 basehttp 1764 14952 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:02:49,160 basehttp 1764 15908 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:02:49,161 basehttp 1764 14600 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-04-18 02:02:49,171 basehttp 1764 9212 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:02:49,181 basehttp 1764 15652 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:02:49,184 basehttp 1764 16920 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:02:49,231 basehttp 1764 16920 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:02:49,231 basehttp 1764 15652 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:02:49,240 basehttp 1764 15652 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-04-18 02:02:49,245 basehttp 1764 16920 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-04-18 02:02:49,245 basehttp 1764 15652 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-18 02:02:49,245 basehttp 1764 14600 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-04-18 02:02:49,246 basehttp 1764 9212 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+WARNING 2025-04-18 02:02:49,308 log 1764 9212 Not Found: /favicon.ico
+WARNING 2025-04-18 02:02:49,309 basehttp 1764 9212 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:02:51,047 basehttp 1764 9212 "GET /admin/participants/participant/6/change/ HTTP/1.1" 200 11984
+INFO 2025-04-18 02:02:51,082 basehttp 1764 9212 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:02:55,945 basehttp 1764 9212 "POST /admin/participants/participant/6/change/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:02:55,966 basehttp 1764 9212 "GET /admin/participants/participant/ HTTP/1.1" 200 15770
+INFO 2025-04-18 02:02:56,027 basehttp 1764 9212 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:03:07,564 basehttp 1764 7328 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:03:07,619 basehttp 1764 7328 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:04:04,473 basehttp 1764 7328 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:04:04,490 basehttp 1764 7328 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11867
+INFO 2025-04-18 02:04:04,540 basehttp 1764 7328 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:04:44,251 basehttp 1764 7328 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:04:44,266 basehttp 1764 7328 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11812
+INFO 2025-04-18 02:04:44,325 basehttp 1764 7328 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:05:38,330 basehttp 1764 7328 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11903
+INFO 2025-04-18 02:05:38,375 basehttp 1764 7328 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:05:48,050 basehttp 1764 7328 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:05:48,071 basehttp 1764 7328 "GET /admin/participants/participant/ HTTP/1.1" 200 18837
+INFO 2025-04-18 02:05:48,126 basehttp 1764 7328 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:05:57,347 basehttp 1764 7328 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:05:57,394 basehttp 1764 7328 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:06:25,917 autoreload 1764 11284 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:06:26,650 autoreload 14528 15904 Watching for file changes with StatReloader
+INFO 2025-04-18 02:06:29,159 autoreload 14528 15904 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:06:29,915 autoreload 16792 5748 Watching for file changes with StatReloader
+INFO 2025-04-18 02:06:33,133 basehttp 16792 15348 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:06:33,198 basehttp 16792 15244 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:06:33,256 basehttp 16792 16776 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:06:33,260 basehttp 16792 16776 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:06:33,262 basehttp 16792 16776 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:06:33,264 basehttp 16792 16776 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:06:33,266 basehttp 16792 16776 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:06:33,268 basehttp 16792 16776 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:06:33,272 basehttp 16792 16776 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:06:33,276 basehttp 16792 16776 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:06:33,278 basehttp 16792 15244 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:06:33,280 basehttp 16792 16776 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:06:33,305 basehttp 16792 15348 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:06:33,309 basehttp 16792 16672 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:06:33,311 basehttp 16792 16444 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:06:33,323 basehttp 16792 1416 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:06:33,457 basehttp 16792 1416 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:06:33,457 basehttp 16792 16444 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:06:33,463 basehttp 16792 16444 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:06:33,463 basehttp 16792 1416 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:06:33,481 basehttp 16792 1416 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:06:33,556 log 16792 1416 Not Found: /favicon.ico
+WARNING 2025-04-18 02:06:33,557 basehttp 16792 1416 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:06:45,149 autoreload 16792 5748 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:06:45,786 autoreload 14700 13568 Watching for file changes with StatReloader
+INFO 2025-04-18 02:06:47,279 autoreload 14700 13568 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:06:47,963 autoreload 13316 292 Watching for file changes with StatReloader
+INFO 2025-04-18 02:06:49,452 autoreload 13316 292 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:06:50,145 autoreload 8968 16044 Watching for file changes with StatReloader
+INFO 2025-04-18 02:07:34,562 autoreload 8968 16044 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:07:35,382 autoreload 14428 14736 Watching for file changes with StatReloader
+INFO 2025-04-18 02:07:38,913 autoreload 14428 14736 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:07:39,489 autoreload 14400 10284 Watching for file changes with StatReloader
+INFO 2025-04-18 02:07:46,244 basehttp 14400 9164 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:07:46,301 basehttp 14400 17064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:07:46,338 basehttp 14400 9164 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:07:46,340 basehttp 14400 9164 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:07:46,343 basehttp 14400 9164 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:07:46,344 basehttp 14400 9164 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:07:46,346 basehttp 14400 9164 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:07:46,348 basehttp 14400 9164 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:07:46,349 basehttp 14400 9164 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:07:46,352 basehttp 14400 9164 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:07:46,355 basehttp 14400 9164 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:07:46,373 basehttp 14400 17236 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:07:46,386 basehttp 14400 14792 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:07:46,388 basehttp 14400 2068 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:07:46,389 basehttp 14400 17064 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:07:46,391 basehttp 14400 15908 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:07:46,444 basehttp 14400 17064 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:07:46,444 basehttp 14400 2068 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:07:46,502 basehttp 14400 17064 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:07:46,503 basehttp 14400 2068 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:07:46,512 basehttp 14400 2068 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:07:46,564 log 14400 2068 Not Found: /favicon.ico
+WARNING 2025-04-18 02:07:46,565 basehttp 14400 2068 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:08:04,130 autoreload 14400 10284 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:08:04,941 autoreload 12544 3124 Watching for file changes with StatReloader
+INFO 2025-04-18 02:08:07,462 autoreload 12544 3124 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:08:08,061 autoreload 16240 4464 Watching for file changes with StatReloader
+INFO 2025-04-18 02:08:09,523 autoreload 16240 4464 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:08:10,130 autoreload 1668 16660 Watching for file changes with StatReloader
+INFO 2025-04-18 02:08:11,521 autoreload 1668 16660 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:08:12,192 autoreload 13544 10200 Watching for file changes with StatReloader
+INFO 2025-04-18 02:08:16,980 basehttp 13544 13524 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:08:17,040 basehttp 13544 8108 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:08:17,094 basehttp 13544 13524 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:08:17,097 basehttp 13544 13524 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:08:17,100 basehttp 13544 13524 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:08:17,102 basehttp 13544 13524 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:08:17,104 basehttp 13544 13524 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:08:17,114 basehttp 13544 13524 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:08:17,118 basehttp 13544 13424 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:08:17,120 basehttp 13544 16952 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:08:17,139 basehttp 13544 13524 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:08:17,165 basehttp 13544 5832 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:08:17,170 basehttp 13544 8108 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:08:17,171 basehttp 13544 14852 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:08:17,273 basehttp 13544 13524 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:08:17,275 basehttp 13544 16952 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:08:17,278 basehttp 13544 13524 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:08:17,284 basehttp 13544 13524 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:08:17,288 basehttp 13544 13524 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:08:17,296 basehttp 13544 13524 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:08:17,299 basehttp 13544 13524 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:08:17,374 log 13544 13524 Not Found: /favicon.ico
+WARNING 2025-04-18 02:08:17,375 basehttp 13544 13524 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:08:52,556 basehttp 13544 13524 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:08:52,613 basehttp 13544 13524 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:09:01,077 basehttp 13544 13524 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:09:01,114 basehttp 13544 13524 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:09:02,930 basehttp 13544 13524 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:09:02,983 basehttp 13544 13524 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:09:11,468 basehttp 13544 13524 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:09:11,499 basehttp 13544 13524 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:09:12,232 basehttp 13544 13524 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:09:12,280 basehttp 13544 13524 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:09:24,240 basehttp 13544 13524 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:09:24,295 basehttp 13544 13524 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:02,026 autoreload 13544 10200 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:10:02,539 autoreload 16460 2864 Watching for file changes with StatReloader
+INFO 2025-04-18 02:10:15,860 basehttp 16460 11184 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:10:15,914 basehttp 16460 15912 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:15,972 basehttp 16460 11184 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:10:15,975 basehttp 16460 11184 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:10:15,980 basehttp 16460 11184 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:10:15,982 basehttp 16460 11184 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:10:15,984 basehttp 16460 11184 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:10:15,985 basehttp 16460 11184 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:10:15,987 basehttp 16460 11184 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:10:15,990 basehttp 16460 11184 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:10:15,992 basehttp 16460 11184 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:10:15,998 basehttp 16460 15236 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:10:16,003 basehttp 16460 4892 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:10:16,008 basehttp 16460 4892 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:10:16,010 basehttp 16460 17312 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:10:16,015 basehttp 16460 17136 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:10:16,018 basehttp 16460 15912 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:10:16,022 basehttp 16460 15912 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:10:16,024 basehttp 16460 15912 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:10:16,031 basehttp 16460 15912 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:10:16,043 basehttp 16460 15912 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:10:16,231 log 16460 15912 Not Found: /favicon.ico
+WARNING 2025-04-18 02:10:16,231 basehttp 16460 15912 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:10:21,490 basehttp 16460 15912 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:10:21,544 basehttp 16460 15912 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:24,470 basehttp 16460 15912 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11944
+INFO 2025-04-18 02:10:24,515 basehttp 16460 17136 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:10:24,515 basehttp 16460 17312 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:10:24,515 basehttp 16460 15912 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:10:24,519 basehttp 16460 4892 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:10:24,524 basehttp 16460 15236 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:24,528 basehttp 16460 17136 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:10:24,529 basehttp 16460 15912 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:10:24,530 basehttp 16460 4892 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:10:24,532 basehttp 16460 17312 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:10:24,534 basehttp 16460 17136 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:10:24,534 basehttp 16460 15912 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:10:24,535 basehttp 16460 15236 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:10:24,536 basehttp 16460 4892 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:10:24,537 basehttp 16460 17136 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:10:24,537 basehttp 16460 11184 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:10:24,539 basehttp 16460 17312 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:10:24,545 basehttp 16460 17312 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:10:24,551 basehttp 16460 17136 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:10:24,551 basehttp 16460 17312 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:10:24,558 basehttp 16460 17136 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:10:24,624 log 16460 17136 Not Found: /favicon.ico
+WARNING 2025-04-18 02:10:24,626 basehttp 16460 17136 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:10:28,974 basehttp 16460 17136 "GET /admin/participants/participant/ HTTP/1.1" 200 18521
+INFO 2025-04-18 02:10:29,022 basehttp 16460 17136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:31,748 basehttp 16460 17136 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:10:31,801 basehttp 16460 17136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:34,355 basehttp 16460 17136 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12212
+INFO 2025-04-18 02:10:34,406 basehttp 16460 17136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:40,813 autoreload 16460 2864 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:10:41,515 autoreload 13824 13492 Watching for file changes with StatReloader
+INFO 2025-04-18 02:10:45,482 basehttp 13824 14184 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12212
+INFO 2025-04-18 02:10:45,529 basehttp 13824 9084 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:45,584 basehttp 13824 17396 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:10:45,587 basehttp 13824 17396 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:10:45,589 basehttp 13824 17396 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:10:45,590 basehttp 13824 17396 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:10:45,592 basehttp 13824 17396 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:10:45,595 basehttp 13824 17396 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:10:45,597 basehttp 13824 17396 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:10:45,601 basehttp 13824 9084 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:10:45,602 basehttp 13824 17396 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:10:45,605 basehttp 13824 9084 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:10:45,622 basehttp 13824 14184 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:10:45,639 basehttp 13824 6556 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:10:45,645 basehttp 13824 6556 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:10:45,645 basehttp 13824 4784 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:10:45,649 basehttp 13824 16772 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:10:45,652 basehttp 13824 16772 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:10:45,654 basehttp 13824 4784 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:10:45,664 basehttp 13824 4784 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:10:45,669 basehttp 13824 4784 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:10:45,740 log 13824 4784 Not Found: /favicon.ico
+WARNING 2025-04-18 02:10:45,741 basehttp 13824 4784 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:10:47,843 basehttp 13824 4784 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12212
+INFO 2025-04-18 02:10:47,888 basehttp 13824 4784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:49,310 basehttp 13824 4784 "GET /admin/participants/participant/ HTTP/1.1" 200 18521
+INFO 2025-04-18 02:10:49,356 basehttp 13824 4784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:50,384 basehttp 13824 4784 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:10:50,440 basehttp 13824 4784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:10:53,484 basehttp 13824 4784 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12212
+INFO 2025-04-18 02:10:53,532 basehttp 13824 4784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:11:23,083 autoreload 13824 13492 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:11:23,595 autoreload 16556 12040 Watching for file changes with StatReloader
+INFO 2025-04-18 02:11:24,942 autoreload 16556 12040 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:11:25,397 autoreload 17124 11208 Watching for file changes with StatReloader
+INFO 2025-04-18 02:11:39,377 autoreload 17124 11208 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:11:40,119 autoreload 13552 16576 Watching for file changes with StatReloader
+INFO 2025-04-18 02:11:44,882 basehttp 13552 14196 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12022
+INFO 2025-04-18 02:11:44,940 basehttp 13552 17056 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:11:45,020 basehttp 13552 6164 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:11:45,023 basehttp 13552 6164 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:11:45,025 basehttp 13552 14700 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:11:45,027 basehttp 13552 6164 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:11:45,028 basehttp 13552 14700 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:11:45,030 basehttp 13552 6164 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:11:45,031 basehttp 13552 14700 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:11:45,032 basehttp 13552 6164 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:11:45,033 basehttp 13552 14700 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:11:45,035 basehttp 13552 14196 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:11:45,036 basehttp 13552 14700 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:11:45,037 basehttp 13552 6164 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:11:45,041 basehttp 13552 16900 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:11:45,043 basehttp 13552 16748 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:11:45,046 basehttp 13552 17056 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:11:45,048 basehttp 13552 17056 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:11:45,186 basehttp 13552 17056 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:11:45,187 basehttp 13552 16748 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:11:45,187 basehttp 13552 16900 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:11:45,263 log 13552 16900 Not Found: /favicon.ico
+WARNING 2025-04-18 02:11:45,264 basehttp 13552 16900 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:12:25,079 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:12:25,094 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11865
+INFO 2025-04-18 02:12:25,150 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:12:25,175 basehttp 13552 16900 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:13:00,524 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:13:00,544 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11867
+INFO 2025-04-18 02:13:00,586 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:13:42,401 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:13:42,419 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11865
+INFO 2025-04-18 02:13:42,479 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:14:11,819 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:14:11,833 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11861
+INFO 2025-04-18 02:14:11,882 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:14:38,157 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:14:38,196 basehttp 13552 16900 "GET /admin/participants/participant/ HTTP/1.1" 200 24371
+INFO 2025-04-18 02:14:38,245 basehttp 13552 16900 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-04-18 02:14:38,245 basehttp 13552 17056 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:14:38,249 basehttp 13552 16748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:14:38,281 basehttp 13552 16748 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-04-18 02:14:38,312 basehttp 13552 16748 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:14:38,313 basehttp 13552 17056 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:14:38,313 basehttp 13552 16900 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:14:51,592 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:14:51,641 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:15:00,781 basehttp 13552 16900 "GET /admin/participants/participant/ HTTP/1.1" 200 24057
+INFO 2025-04-18 02:15:00,839 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:15:10,041 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11489
+INFO 2025-04-18 02:15:10,089 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:15:31,289 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:15:31,305 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11828
+INFO 2025-04-18 02:15:31,366 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:16:03,232 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11763
+INFO 2025-04-18 02:16:03,280 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:16:07,242 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:16:07,267 basehttp 13552 16900 "GET /admin/participants/participant/ HTTP/1.1" 200 25817
+INFO 2025-04-18 02:16:07,326 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:16:16,620 basehttp 13552 16900 "GET /admin/participants/participant/18/change/ HTTP/1.1" 200 11994
+INFO 2025-04-18 02:16:16,667 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:16:24,635 basehttp 13552 16900 "POST /admin/participants/participant/18/change/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:16:24,650 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11810
+INFO 2025-04-18 02:16:24,713 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:17:48,296 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:17:48,313 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11833
+INFO 2025-04-18 02:17:48,356 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:18:19,384 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:18:19,400 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11829
+INFO 2025-04-18 02:18:19,446 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:18:52,395 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:18:52,409 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11823
+INFO 2025-04-18 02:18:52,446 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:19:20,710 basehttp 13552 16900 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:19:20,728 basehttp 13552 16900 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11852
+INFO 2025-04-18 02:19:20,778 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:19:42,555 basehttp 13552 16900 "GET /admin/participants/participant/ HTTP/1.1" 200 29188
+INFO 2025-04-18 02:19:42,600 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:19:44,659 basehttp 13552 16900 "GET /admin/participants/participant/22/change/ HTTP/1.1" 200 12215
+INFO 2025-04-18 02:19:44,707 basehttp 13552 16900 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:20:02,594 autoreload 13552 16576 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:20:03,379 autoreload 2584 12512 Watching for file changes with StatReloader
+INFO 2025-04-18 02:20:07,984 autoreload 2584 12512 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:20:08,590 autoreload 8960 11120 Watching for file changes with StatReloader
+INFO 2025-04-18 02:20:11,791 basehttp 8960 4012 "GET /admin/participants/participant/22/change/ HTTP/1.1" 200 12215
+INFO 2025-04-18 02:20:11,841 basehttp 8960 572 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:20:11,896 basehttp 8960 4012 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:20:11,901 basehttp 8960 4012 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:20:11,904 basehttp 8960 4012 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:20:11,906 basehttp 8960 4012 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:20:11,908 basehttp 8960 4012 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:20:11,910 basehttp 8960 4012 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:20:11,911 basehttp 8960 4012 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:20:11,915 basehttp 8960 4012 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:20:11,920 basehttp 8960 4012 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:20:11,921 basehttp 8960 8620 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:20:11,924 basehttp 8960 2096 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:20:11,949 basehttp 8960 2032 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:20:11,952 basehttp 8960 2644 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:20:11,960 basehttp 8960 572 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:20:11,964 basehttp 8960 572 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:20:11,972 basehttp 8960 572 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:20:11,974 basehttp 8960 2644 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:20:11,977 basehttp 8960 2644 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:20:11,988 basehttp 8960 2644 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:20:12,153 log 8960 2644 Not Found: /favicon.ico
+WARNING 2025-04-18 02:20:12,154 basehttp 8960 2644 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:20:18,872 basehttp 8960 2644 "POST /admin/participants/participant/22/change/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:20:18,886 basehttp 8960 2644 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11901
+INFO 2025-04-18 02:20:18,925 basehttp 8960 2644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:21:23,651 basehttp 8960 2644 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11853
+INFO 2025-04-18 02:21:23,705 basehttp 8960 2644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:22:09,983 autoreload 8960 11120 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:22:10,571 autoreload 12788 12784 Watching for file changes with StatReloader
+INFO 2025-04-18 02:22:12,841 autoreload 12788 12784 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:22:13,356 autoreload 14416 8872 Watching for file changes with StatReloader
+INFO 2025-04-18 02:22:14,584 autoreload 14416 8872 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:22:14,980 autoreload 1516 8988 Watching for file changes with StatReloader
+INFO 2025-04-18 02:22:19,506 autoreload 1516 8988 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:22:20,235 autoreload 9156 2924 Watching for file changes with StatReloader
+ERROR 2025-04-18 02:22:23,825 log 9156 2808 Internal Server Error: /admin/participants/participant/add/
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: participants_participant.weight_category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1944, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1258, in save_model
+    obj.save()
+    ~~~~~~~~^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: participants_participant.weight_category
+ERROR 2025-04-18 02:22:23,843 basehttp 9156 2808 "POST /admin/participants/participant/add/ HTTP/1.1" 500 215499
+WARNING 2025-04-18 02:22:24,184 log 9156 2808 Not Found: /favicon.ico
+WARNING 2025-04-18 02:22:24,185 basehttp 9156 2808 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:22:31,277 autoreload 9588 16640 Watching for file changes with StatReloader
+ERROR 2025-04-18 02:22:35,415 log 9588 16928 Internal Server Error: /admin/participants/participant/add/
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: participants_participant.weight_category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1944, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1258, in save_model
+    obj.save()
+    ~~~~~~~~^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: participants_participant.weight_category
+ERROR 2025-04-18 02:22:35,433 basehttp 9588 16928 "POST /admin/participants/participant/add/ HTTP/1.1" 500 215499
+WARNING 2025-04-18 02:22:35,630 log 9588 16928 Not Found: /favicon.ico
+WARNING 2025-04-18 02:22:35,631 basehttp 9588 16928 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:22:38,056 basehttp 9588 16928 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11333
+INFO 2025-04-18 02:22:40,726 basehttp 9588 16928 "GET /admin/participants/participant/ HTTP/1.1" 200 29462
+INFO 2025-04-18 02:22:40,768 basehttp 9588 16928 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:22:43,266 basehttp 9588 16928 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11333
+INFO 2025-04-18 02:22:43,309 basehttp 9588 16928 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:22:47,884 basehttp 9588 16928 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11333
+INFO 2025-04-18 02:22:47,945 basehttp 9588 14932 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:22:47,999 basehttp 9588 16928 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:22:48,004 basehttp 9588 16928 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:22:48,006 basehttp 9588 16928 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:22:48,008 basehttp 9588 16928 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:22:48,010 basehttp 9588 16928 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:22:48,012 basehttp 9588 16928 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:22:48,014 basehttp 9588 5916 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:22:48,015 basehttp 9588 16928 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:22:48,016 basehttp 9588 13392 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:22:48,018 basehttp 9588 5916 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:22:48,020 basehttp 9588 16928 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:22:48,053 basehttp 9588 15796 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:22:48,064 basehttp 9588 1668 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:22:48,071 basehttp 9588 1668 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:22:48,072 basehttp 9588 15796 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:22:48,074 basehttp 9588 14932 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:22:48,266 basehttp 9588 14932 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:22:48,266 basehttp 9588 15796 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:22:48,277 basehttp 9588 15796 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:22:48,341 log 9588 15796 Not Found: /favicon.ico
+WARNING 2025-04-18 02:22:48,342 basehttp 9588 15796 "GET /favicon.ico HTTP/1.1" 404 3406
+ERROR 2025-04-18 02:23:09,031 log 9588 15796 Internal Server Error: /admin/participants/participant/add/
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: participants_participant.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1944, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1258, in save_model
+    obj.save()
+    ~~~~~~~~^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\work\sport-main\sport\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: participants_participant.name
+ERROR 2025-04-18 02:23:09,045 basehttp 9588 15796 "POST /admin/participants/participant/add/ HTTP/1.1" 500 214327
+INFO 2025-04-18 02:23:20,410 autoreload 9588 16640 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:23:21,098 autoreload 1316 13692 Watching for file changes with StatReloader
+INFO 2025-04-18 02:23:30,564 basehttp 1316 3260 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12035
+INFO 2025-04-18 02:23:30,610 basehttp 1316 1136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:23:30,649 basehttp 1316 3260 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:23:30,656 basehttp 1316 1136 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:23:30,657 basehttp 1316 3260 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:23:30,659 basehttp 1316 1136 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:23:30,661 basehttp 1316 3260 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:23:30,661 basehttp 1316 1136 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:23:30,664 basehttp 1316 3260 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:23:30,668 basehttp 1316 1136 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:23:30,670 basehttp 1316 3260 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:23:30,672 basehttp 1316 1136 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:23:30,683 basehttp 1316 16168 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:23:30,696 basehttp 1316 11480 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:23:30,699 basehttp 1316 11404 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:23:30,700 basehttp 1316 10188 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:23:30,709 basehttp 1316 11480 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:23:30,709 basehttp 1316 10188 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:23:30,709 basehttp 1316 11404 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:23:30,717 basehttp 1316 10188 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:23:30,851 basehttp 1316 10188 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:23:30,895 log 1316 10188 Not Found: /favicon.ico
+WARNING 2025-04-18 02:23:30,896 basehttp 1316 10188 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:23:42,702 autoreload 1316 13692 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:23:43,352 autoreload 11572 5476 Watching for file changes with StatReloader
+INFO 2025-04-18 02:23:49,422 basehttp 11572 5428 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12035
+INFO 2025-04-18 02:23:49,465 basehttp 11572 10940 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:23:49,510 basehttp 11572 5428 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:23:49,513 basehttp 11572 5428 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:23:49,516 basehttp 11572 5428 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:23:49,518 basehttp 11572 5428 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:23:49,520 basehttp 11572 5428 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:23:49,522 basehttp 11572 5428 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:23:49,524 basehttp 11572 5428 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:23:49,527 basehttp 11572 5428 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:23:49,528 basehttp 11572 5428 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:23:49,538 basehttp 11572 11068 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:23:49,544 basehttp 11572 1632 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:23:49,549 basehttp 11572 1744 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:23:49,554 basehttp 11572 1744 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:23:49,561 basehttp 11572 6580 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:23:49,567 basehttp 11572 6580 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:23:49,569 basehttp 11572 10940 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:23:49,572 basehttp 11572 10940 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:23:49,576 basehttp 11572 10940 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:23:49,592 basehttp 11572 10940 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:23:49,665 log 11572 10940 Not Found: /favicon.ico
+WARNING 2025-04-18 02:23:49,666 basehttp 11572 10940 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:24:22,635 basehttp 11572 10940 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11919
+INFO 2025-04-18 02:24:22,682 basehttp 11572 10940 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:24:30,131 autoreload 11572 5476 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:24:30,868 autoreload 8084 7416 Watching for file changes with StatReloader
+INFO 2025-04-18 02:24:33,386 autoreload 8084 7416 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:24:34,016 autoreload 16616 10148 Watching for file changes with StatReloader
+INFO 2025-04-18 02:24:36,948 basehttp 16616 10068 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:24:37,008 basehttp 16616 10068 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11885
+INFO 2025-04-18 02:24:37,057 basehttp 16616 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:24:37,100 basehttp 16616 10068 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:24:37,105 basehttp 16616 10068 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:24:37,107 basehttp 16616 10068 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:24:37,109 basehttp 16616 10068 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:24:37,110 basehttp 16616 10068 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:24:37,112 basehttp 16616 10068 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:24:37,113 basehttp 16616 10068 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:24:37,117 basehttp 16616 10068 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:24:37,124 basehttp 16616 10068 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:24:37,130 basehttp 16616 11736 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:24:37,143 basehttp 16616 14852 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:24:37,148 basehttp 16616 14852 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:24:37,149 basehttp 16616 15704 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:24:37,159 basehttp 16616 2708 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:24:37,161 basehttp 16616 8016 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:24:37,280 basehttp 16616 2708 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:24:37,285 basehttp 16616 8016 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:24:37,285 basehttp 16616 2708 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:24:37,298 basehttp 16616 2708 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-18 02:24:37,298 basehttp 16616 8016 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+WARNING 2025-04-18 02:24:37,364 log 16616 8016 Not Found: /favicon.ico
+WARNING 2025-04-18 02:24:37,365 basehttp 16616 8016 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:25:13,073 basehttp 16616 8016 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:25:13,089 basehttp 16616 8016 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11826
+INFO 2025-04-18 02:25:13,132 basehttp 16616 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:26:29,614 basehttp 16616 8016 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:26:29,628 basehttp 16616 8016 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11921
+INFO 2025-04-18 02:26:29,676 basehttp 16616 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:27:02,518 basehttp 16616 8016 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:27:02,536 basehttp 16616 8016 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11811
+INFO 2025-04-18 02:27:02,576 basehttp 16616 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:27:31,029 basehttp 16616 8016 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:27:31,044 basehttp 16616 8016 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11784
+INFO 2025-04-18 02:27:31,092 basehttp 16616 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:28:10,368 basehttp 16616 8016 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:28:10,385 basehttp 16616 8016 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11823
+INFO 2025-04-18 02:28:10,419 basehttp 16616 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:28:50,716 autoreload 16616 10148 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:28:51,362 autoreload 14632 5980 Watching for file changes with StatReloader
+INFO 2025-04-18 02:28:54,257 basehttp 14632 16780 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11490
+INFO 2025-04-18 02:28:54,311 basehttp 14632 15896 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:28:54,371 basehttp 14632 1064 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:28:54,374 basehttp 14632 2744 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:28:54,376 basehttp 14632 2744 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:28:54,377 basehttp 14632 1064 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:28:54,379 basehttp 14632 2744 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:28:54,380 basehttp 14632 2744 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:28:54,380 basehttp 14632 1064 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:28:54,385 basehttp 14632 2744 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:28:54,386 basehttp 14632 1064 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:28:54,389 basehttp 14632 2744 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:28:54,390 basehttp 14632 9376 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:28:54,395 basehttp 14632 1064 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:28:54,409 basehttp 14632 16780 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:28:54,422 basehttp 14632 15896 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:28:54,435 basehttp 14632 5596 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:28:54,580 basehttp 14632 16780 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:28:54,580 basehttp 14632 5596 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:28:54,580 basehttp 14632 15896 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:28:54,580 basehttp 14632 1064 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:28:54,656 log 14632 1064 Not Found: /favicon.ico
+WARNING 2025-04-18 02:28:54,657 basehttp 14632 1064 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:29:19,732 basehttp 14632 1064 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:29:19,752 basehttp 14632 1064 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11980
+INFO 2025-04-18 02:29:19,921 basehttp 14632 1064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:29:50,658 basehttp 14632 1064 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:29:50,674 basehttp 14632 1064 "GET /admin/participants/participant/add/ HTTP/1.1" 200 12024
+INFO 2025-04-18 02:29:50,714 basehttp 14632 1064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:30:20,463 basehttp 14632 1064 "POST /admin/participants/participant/add/ HTTP/1.1" 200 11934
+INFO 2025-04-18 02:30:20,513 basehttp 14632 1064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:30:34,537 basehttp 14632 1064 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:30:34,590 basehttp 14632 1064 "GET /admin/participants/participant/ HTTP/1.1" 200 39832
+INFO 2025-04-18 02:30:34,631 basehttp 14632 1064 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-04-18 02:30:34,632 basehttp 14632 16780 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:30:34,635 basehttp 14632 15896 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:30:34,635 basehttp 14632 16780 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-04-18 02:30:34,662 basehttp 14632 16780 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:30:34,662 basehttp 14632 15896 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:30:34,663 basehttp 14632 1064 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-04-18 02:31:01,237 autoreload 14632 5980 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:31:02,093 autoreload 6716 5924 Watching for file changes with StatReloader
+INFO 2025-04-18 02:31:09,013 basehttp 6716 720 "GET /admin/participants/participant/ HTTP/1.1" 200 39554
+INFO 2025-04-18 02:31:09,097 basehttp 6716 720 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:31:09,116 basehttp 6716 6932 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-04-18 02:31:09,116 basehttp 6716 8876 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:31:09,116 basehttp 6716 13716 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:31:09,118 basehttp 6716 13548 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:31:09,125 basehttp 6716 13716 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:31:09,125 basehttp 6716 8876 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:31:09,126 basehttp 6716 720 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:31:09,145 basehttp 6716 6932 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:31:09,145 basehttp 6716 13548 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:31:09,145 basehttp 6716 13464 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:09,146 basehttp 6716 13716 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:31:09,147 basehttp 6716 720 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:31:09,150 basehttp 6716 6932 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-04-18 02:31:09,151 basehttp 6716 8876 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:31:09,197 basehttp 6716 8876 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:31:09,197 basehttp 6716 6932 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:31:09,208 basehttp 6716 8876 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-04-18 02:31:09,348 basehttp 6716 8876 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-18 02:31:09,350 basehttp 6716 6932 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-04-18 02:31:09,350 basehttp 6716 13716 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-04-18 02:31:09,350 basehttp 6716 720 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+WARNING 2025-04-18 02:31:09,401 log 6716 6932 Not Found: /favicon.ico
+WARNING 2025-04-18 02:31:09,402 basehttp 6716 6932 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:31:10,318 basehttp 6716 6932 "GET /admin/participants/participant/31/change/ HTTP/1.1" 200 12027
+INFO 2025-04-18 02:31:10,360 basehttp 6716 6932 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:14,562 basehttp 6716 6932 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12342
+INFO 2025-04-18 02:31:14,603 basehttp 6716 6932 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:19,408 autoreload 6716 5924 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:31:20,102 autoreload 14964 16972 Watching for file changes with StatReloader
+INFO 2025-04-18 02:31:23,410 basehttp 14964 3492 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12342
+INFO 2025-04-18 02:31:23,456 basehttp 14964 9184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:23,535 basehttp 14964 3476 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:31:23,539 basehttp 14964 3476 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:31:23,539 basehttp 14964 14332 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:31:23,542 basehttp 14964 3476 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:31:23,542 basehttp 14964 14332 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:31:23,548 basehttp 14964 14332 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:31:23,549 basehttp 14964 3476 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:31:23,550 basehttp 14964 14332 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:31:23,553 basehttp 14964 1544 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:31:23,553 basehttp 14964 3476 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:31:23,553 basehttp 14964 3492 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:31:23,556 basehttp 14964 1544 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:31:23,557 basehttp 14964 14332 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:31:23,559 basehttp 14964 9456 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:31:23,560 basehttp 14964 9184 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:31:23,686 basehttp 14964 14332 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:31:23,691 basehttp 14964 14332 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:31:23,695 basehttp 14964 14332 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:31:23,701 basehttp 14964 14332 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:31:23,770 log 14964 14332 Not Found: /favicon.ico
+WARNING 2025-04-18 02:31:23,771 basehttp 14964 14332 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:31:26,759 basehttp 14964 14332 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12342
+INFO 2025-04-18 02:31:26,808 basehttp 14964 14332 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:38,318 basehttp 14964 14332 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12346
+INFO 2025-04-18 02:31:38,363 basehttp 14964 14332 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:43,675 basehttp 14964 14332 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12346
+INFO 2025-04-18 02:31:43,715 basehttp 14964 9184 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:31:43,716 basehttp 14964 3492 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:31:43,716 basehttp 14964 14332 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:31:43,719 basehttp 14964 9456 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:31:43,723 basehttp 14964 9184 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:31:43,723 basehttp 14964 1544 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:43,724 basehttp 14964 3492 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:31:43,725 basehttp 14964 14332 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:31:43,728 basehttp 14964 9456 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:31:43,729 basehttp 14964 9184 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:31:43,730 basehttp 14964 1544 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:31:43,731 basehttp 14964 3492 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:31:43,733 basehttp 14964 14332 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:31:43,734 basehttp 14964 9184 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:31:43,735 basehttp 14964 3476 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:31:43,737 basehttp 14964 9456 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:31:43,742 basehttp 14964 9456 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:31:43,748 basehttp 14964 9184 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:31:43,748 basehttp 14964 9456 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:31:43,762 basehttp 14964 9456 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:31:43,832 log 14964 9456 Not Found: /favicon.ico
+WARNING 2025-04-18 02:31:43,833 basehttp 14964 9456 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:31:48,385 basehttp 14964 9456 "GET /admin/participants/participant/ HTTP/1.1" 200 39554
+INFO 2025-04-18 02:31:48,428 basehttp 14964 9456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:50,833 basehttp 14964 9456 "GET /admin/participants/participant/31/change/ HTTP/1.1" 200 12027
+INFO 2025-04-18 02:31:50,871 basehttp 14964 9456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:31:55,353 basehttp 14964 9456 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12342
+INFO 2025-04-18 02:31:55,409 basehttp 14964 9456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:32:11,092 autoreload 14964 16972 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:32:12,016 autoreload 14580 11248 Watching for file changes with StatReloader
+INFO 2025-04-18 02:32:15,505 autoreload 14580 11248 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:32:16,106 autoreload 10344 6996 Watching for file changes with StatReloader
+INFO 2025-04-18 02:32:17,769 basehttp 10344 9964 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12342
+INFO 2025-04-18 02:32:17,820 basehttp 10344 11136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:32:17,864 basehttp 10344 15260 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:32:17,867 basehttp 10344 15260 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:32:17,869 basehttp 10344 15260 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:32:17,871 basehttp 10344 15260 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:32:17,873 basehttp 10344 15260 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:32:17,875 basehttp 10344 15260 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:32:17,881 basehttp 10344 15260 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:32:17,884 basehttp 10344 15260 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:32:17,886 basehttp 10344 15260 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:32:17,903 basehttp 10344 2932 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:32:17,908 basehttp 10344 9964 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:32:17,916 basehttp 10344 3628 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:32:17,919 basehttp 10344 9264 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:32:17,924 basehttp 10344 11136 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:32:18,024 basehttp 10344 2932 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:32:18,029 basehttp 10344 11136 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:32:18,029 basehttp 10344 2932 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:32:18,040 basehttp 10344 2932 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:32:18,048 basehttp 10344 2932 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:32:18,116 log 10344 2932 Not Found: /favicon.ico
+WARNING 2025-04-18 02:32:18,117 basehttp 10344 2932 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:32:20,187 basehttp 10344 2932 "POST /admin/participants/participant/31/change/ HTTP/1.1" 200 12342
+INFO 2025-04-18 02:32:20,221 basehttp 10344 2932 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:32:36,575 autoreload 10344 6996 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:32:37,119 autoreload 15160 17244 Watching for file changes with StatReloader
+INFO 2025-04-18 02:32:38,515 autoreload 15160 17244 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:32:38,930 autoreload 13680 13856 Watching for file changes with StatReloader
+INFO 2025-04-18 02:32:42,419 autoreload 13680 13856 C:\Users\HP\Desktop\work\sport-main\sport\SportBackend\participants\models.py changed, reloading.
+INFO 2025-04-18 02:32:43,028 autoreload 17124 16616 Watching for file changes with StatReloader
+INFO 2025-04-18 02:32:46,244 basehttp 17124 10112 "POST /admin/participants/participant/31/change/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:32:46,306 basehttp 17124 10112 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11809
+INFO 2025-04-18 02:32:46,359 basehttp 17124 16168 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:32:46,397 basehttp 17124 10112 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-18 02:32:46,401 basehttp 17124 10112 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-18 02:32:46,403 basehttp 17124 10112 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-18 02:32:46,405 basehttp 17124 10112 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-18 02:32:46,407 basehttp 17124 10112 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-18 02:32:46,409 basehttp 17124 10112 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-18 02:32:46,411 basehttp 17124 10112 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-18 02:32:46,421 basehttp 17124 10112 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-18 02:32:46,424 basehttp 17124 10112 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-18 02:32:46,445 basehttp 17124 10188 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-18 02:32:46,457 basehttp 17124 3308 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-18 02:32:46,460 basehttp 17124 13440 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-18 02:32:46,465 basehttp 17124 7916 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-18 02:32:46,466 basehttp 17124 16168 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-18 02:32:46,571 basehttp 17124 16168 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-18 02:32:46,572 basehttp 17124 13440 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-18 02:32:46,576 basehttp 17124 16168 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-18 02:32:46,577 basehttp 17124 13440 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-18 02:32:46,593 basehttp 17124 16168 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-04-18 02:32:46,593 basehttp 17124 13440 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-04-18 02:32:46,672 log 17124 13440 Not Found: /favicon.ico
+WARNING 2025-04-18 02:32:46,673 basehttp 17124 13440 "GET /favicon.ico HTTP/1.1" 404 3406
+INFO 2025-04-18 02:32:49,920 basehttp 17124 13440 "GET /admin/participants/participant/ HTTP/1.1" 200 39554
+INFO 2025-04-18 02:32:49,965 basehttp 17124 13440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:32:53,091 basehttp 17124 13440 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11490
+INFO 2025-04-18 02:32:53,142 basehttp 17124 13440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:33:24,073 basehttp 17124 13452 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:33:24,089 basehttp 17124 13452 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11817
+INFO 2025-04-18 02:33:24,136 basehttp 17124 13452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:33:59,196 basehttp 17124 13452 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:33:59,213 basehttp 17124 13452 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11858
+INFO 2025-04-18 02:33:59,254 basehttp 17124 13452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:34:27,037 basehttp 17124 13452 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:34:27,051 basehttp 17124 13452 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11854
+INFO 2025-04-18 02:34:27,094 basehttp 17124 13452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:34:58,443 basehttp 17124 13452 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
+INFO 2025-04-18 02:34:58,457 basehttp 17124 13452 "GET /admin/participants/participant/add/ HTTP/1.1" 200 11849
+INFO 2025-04-18 02:34:58,496 basehttp 17124 13452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:35:00,740 basehttp 17124 13452 "POST /admin/participants/participant/add/ HTTP/1.1" 200 12084
+INFO 2025-04-18 02:35:00,783 basehttp 17124 13452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 02:35:02,727 basehttp 17124 13452 "GET /admin/participants/participant/ HTTP/1.1" 200 43453
+INFO 2025-04-18 02:35:02,767 basehttp 17124 13452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
