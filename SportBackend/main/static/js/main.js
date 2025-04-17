@@ -2,7 +2,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('nav a');
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('header nav');
+    const body = document.body;
+    const dropdowns = document.querySelectorAll('.dropdown');
     
+    // Добавляем активный класс для текущего пункта меню
     navLinks.forEach(link => {
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('active');
@@ -10,24 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Burger menu functionality
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('header nav');
-    const body = document.body;
-    const dropdowns = document.querySelectorAll('.dropdown');
-
     burger.addEventListener('click', () => {
         burger.classList.toggle('active');
         nav.classList.toggle('active');
         body.classList.toggle('menu-open');
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target) && !burger.contains(e.target) && nav.classList.contains('active')) {
-            burger.classList.remove('active');
-            nav.classList.remove('active');
-            body.classList.remove('menu-open');
-        }
     });
 
     // Handle dropdowns
@@ -35,38 +26,57 @@ document.addEventListener('DOMContentLoaded', function() {
         const dropdownTrigger = dropdown.querySelector('.dropdown-trigger');
         const dropdownMenu = dropdown.querySelector('.dropdown-menu');
         
-        // Ensure dropdown-trigger does not navigate
-        dropdownTrigger.setAttribute('href', '#');
-
         dropdownTrigger.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent navigation
-            dropdown.classList.toggle('active');
+            e.preventDefault();
+            e.stopPropagation();
             
-            // Close other dropdowns
+            // Закрываем все другие дропдауны
             dropdowns.forEach(otherDropdown => {
                 if (otherDropdown !== dropdown) {
                     otherDropdown.classList.remove('active');
+                    otherDropdown.querySelector('.dropdown-menu').classList.remove('show');
                 }
+            });
+            
+            // Переключаем текущий дропдаун
+            dropdown.classList.toggle('active');
+            dropdownMenu.classList.toggle('show');
+        });
+
+        // Предотвращаем закрытие при клике на само меню
+        dropdownMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Обработка клика по пунктам меню
+        dropdownMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // Закрываем меню только после перехода по ссылке
+                setTimeout(() => {
+                    burger.classList.remove('active');
+                    nav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                    dropdowns.forEach(d => {
+                        d.classList.remove('active');
+                        d.querySelector('.dropdown-menu').classList.remove('show');
+                    });
+                }, 100);
             });
         });
     });
 
-    // Close dropdowns when clicking outside
+    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.dropdown')) {
-            dropdowns.forEach(dropdown => {
-                dropdown.classList.remove('active');
-            });
-        }
-    });
-
-    // Close menu when clicking on a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
+        if (!nav.contains(e.target) && !burger.contains(e.target)) {
             burger.classList.remove('active');
             nav.classList.remove('active');
             body.classList.remove('menu-open');
-        });
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+                dropdown.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        }
     });
 
     // Handle window resize
@@ -75,7 +85,10 @@ document.addEventListener('DOMContentLoaded', function() {
             burger.classList.remove('active');
             nav.classList.remove('active');
             body.classList.remove('menu-open');
-            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+                dropdown.querySelector('.dropdown-menu').classList.remove('show');
+            });
         }
     });
 });

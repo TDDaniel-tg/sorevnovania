@@ -254,28 +254,46 @@ header .burger {
     }
 
     .dropdown-menu {
+        display: none;
         position: static;
-        background-color: rgba(255, 255, 255, 0.1);
+        background: rgba(30, 60, 114, 0.95);
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
         box-shadow: none;
-        padding-left: 1rem;
-        margin-top: 0.5rem;
         border-radius: 0;
-        min-width: auto;
+        z-index: 1002;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .dropdown-menu li {
+        margin: 5px 0;
     }
 
     .dropdown-menu li a {
-        padding: 10px 0;
-        font-size: 1.1rem;
+        display: block;
+        padding: 10px 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+    .dropdown-menu li a:hover {
+        background-color: rgba(255, 140, 0, 0.2);
+    }
+
+    /* Отключаем hover эффект для мобильных */
     .dropdown:hover .dropdown-menu {
         display: none;
     }
 
     .dropdown.active .dropdown-menu {
         display: block;
-        animation: slideDown 0.3s ease-out;
     }
 
     @keyframes slideDown {
