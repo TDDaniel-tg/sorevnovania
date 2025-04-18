@@ -3677,3 +3677,14 @@ INFO 2025-04-18 11:06:09,510 basehttp 13980 9124 "GET /admin/jsi18n/ HTTP/1.1" 2
 INFO 2025-04-18 11:06:48,029 basehttp 13980 9124 "POST /admin/participants/participant/add/ HTTP/1.1" 302 0
 INFO 2025-04-18 11:06:48,077 basehttp 13980 9124 "GET /admin/participants/participant/ HTTP/1.1" 200 49800
 INFO 2025-04-18 11:06:48,119 basehttp 13980 9124 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-18 11:27:47,012 autoreload 2760 5664 Watching for file changes with StatReloader
+INFO 2025-04-18 11:27:51,521 basehttp 2760 23288 "GET / HTTP/1.1" 200 19559
+INFO 2025-04-18 11:27:51,613 basehttp 2760 23288 "GET /static/css/index.css HTTP/1.1" 304 0
+INFO 2025-04-18 11:27:51,623 basehttp 2760 22884 "GET /static/images/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.jpg HTTP/1.1" 304 0
+INFO 2025-04-18 11:27:51,647 basehttp 2760 23116 "GET /static/js/timer.js HTTP/1.1" 304 0
+INFO 2025-04-18 11:27:51,647 basehttp 2760 22884 "GET /static/js/registr.js HTTP/1.1" 304 0
+INFO 2025-04-18 11:27:51,796 basehttp 2760 21708 "GET /static/css/all.css HTTP/1.1" 200 7201
+INFO 2025-04-18 11:27:51,816 basehttp 2760 23288 "GET /static/js/main.js HTTP/1.1" 200 3906
+WARNING 2025-04-18 11:27:52,230 log 2760 23288 Not Found: /favicon.ico
+WARNING 2025-04-18 11:27:52,231 basehttp 2760 23288 "GET /favicon.ico HTTP/1.1" 404 4106
+INFO 2025-04-18 11:27:55,004 basehttp 2760 23288 "GET /participants/registration/ HTTP/1.1" 200 16953

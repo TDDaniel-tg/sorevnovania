@@ -131,6 +131,80 @@
         transition: width 0.3s ease;
     }
 
+    .payment-info {
+        margin-top: 40px;
+        padding: 25px;
+        background: var(--color-surface);
+        border-radius: 15px;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .payment-info h3 {
+        color: var(--color-text);
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .payment-details {
+        display: grid;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .payment-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        background: var(--color-background);
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+    }
+
+    .payment-item:hover {
+        transform: translateX(5px);
+    }
+
+    .payment-label {
+        color: var(--color-text-muted);
+        font-weight: 500;
+    }
+
+    .payment-amount {
+        color: var(--color-text);
+        font-weight: 600;
+    }
+
+    .payment-instructions {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(37, 99, 235, 0.1);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .payment-instructions p {
+        color: var(--color-text);
+        margin-bottom: 10px;
+    }
+
+    .whatsapp-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #25D366;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .whatsapp-link:hover {
+        background: #128C7E;
+        transform: translateY(-2px);
+    }
+
     @media (max-width: 768px) {
         .registration-container {
             
@@ -138,6 +212,10 @@
             padding: 15px; /* Added padding for better spacing */
             transform: none; /* Remove translateX for centering */
             margin-top: 150px;
+        }
+        .payment-info {
+            margin: 20px 0;
+            padding: 15px;
         }
     }
 </style>
@@ -187,6 +265,31 @@
         <button type="submit" class="submit-btn">Зарегистрироваться</button>
         <div id="message" class="message"></div>
     </form>
+</div>
+
+<div class="payment-info">
+    <h3>Информация об оплате</h3>
+    <div class="payment-details">
+        <div class="payment-item">
+            <span class="payment-label">Предварительный взнос:</span>
+            <span class="payment-amount">500 сом</span>
+        </div>
+        <div class="payment-item">
+            <span class="payment-label">Полная стоимость одной номинации:</span>
+            <span class="payment-amount">1000 сом</span>
+        </div>
+        <div class="payment-item">
+            <span class="payment-label">Каждая дополнительная номинация:</span>
+            <span class="payment-amount">700 сом</span>
+        </div>
+    </div>
+    <div class="payment-instructions">
+        <p>Оплата: MBank (+996 708 88 08 38 Елизавета.И.)</p>
+        <p>Чек отправлять в WhatsApp</p>
+        <a href="http://wa.me/996708880838" class="whatsapp-link" target="_blank">
+            Отправить чек в WhatsApp
+        </a>
+    </div>
 </div>
 {% endblock %}
 
