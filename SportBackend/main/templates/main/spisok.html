@@ -12,6 +12,7 @@
         padding: 40px 0;
         margin-bottom: 30px;
         text-align: center;
+        margin-top: -80px;
     }
 
     .page-header h1 {
@@ -31,7 +32,7 @@
 
     .container h1 {
         
-        margin-top: 45px;
+        margin-top: 10px;
     }
 
     .participants-table {
@@ -125,7 +126,7 @@
                 <th>Весовая категория</th>
                 <th>Возраст</th>
                 <th>Дисциплина</th>
-                <th>Дата регистрации</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -137,7 +138,7 @@
                 <td><span class="weight-category">{{ participant.weight_category }} кг</span></td>
                 <td>{{ participant.age }} лет</td>
                 <td><span class="discipline">{{ participant.discipline }}</span></td>
-                <td><span class="registration-date">{{ participant.registration_date|date:"d.m.Y H:i" }}</span></td>
+                
             </tr>
             {% endfor %}
         </tbody>
